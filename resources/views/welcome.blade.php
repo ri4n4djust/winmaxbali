@@ -484,7 +484,7 @@
 
         <div class="section-title">
           <h2>Team</h2>
-          <h3>Tim Kami yang selalu solid<span>solid</span></h3>
+          <h3>Tim Kami yang selalu <span>solid</span></h3>
           <p>Kami memiliki tim yang sangat solid dan selalu bekerja keras untuk melakukan yang terbaik untuk anda</p>
         </div>
 
