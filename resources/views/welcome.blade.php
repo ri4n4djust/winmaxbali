@@ -59,7 +59,7 @@
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3>Berdiri sejak Tahun 2014 kami terus berkomitmen untuk mejadi vendor dan partner yang terbaik bagi client kami</h3>
+            <h3>Berdiri sejak Tahun 2020 kami terus berkomitmen untuk mejadi vendor dan partner yang terbaik bagi client kami</h3>
             <p class="font-italic">
               Setelah melewati masa ke masa, perubahan terus terjadi didunia teknologi dan sistem informasi, kami 
               <a href="https://www.winmaxbali.id">WinMaxBali</a> terus berinovasi dan mengiringi kemajuan teknoligi tersebut
