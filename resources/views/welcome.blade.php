@@ -11,7 +11,7 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Teknikal Enginering</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <p class="description">Kami mengerjakan project Jaringan dan CCTV dari awal pembangunan gedung atau kantor.</p>
             </div>
           </div>
 
@@ -19,15 +19,15 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4 class="title"><a href="">Hardware Enginering</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <p class="description">Kami memperbaiki dan menjual berbagai alat-alat IT</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Software Enginering</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4 class="title"><a href="">Software Developer</a></h4>
+              <p class="description">Kami mengerjakan software untuk keperluan sistem operasional anda.</p>
             </div>
           </div>
 
@@ -35,7 +35,7 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4 class="title"><a href="">Web & Mobile App</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <p class="description">Semua software yang kami kerjakan merupakan Web base, dan kami bisa menggintegrasikan dengan mobile App.</p>
             </div>
           </div>
 
@@ -191,40 +191,7 @@
       </div>
     </section><!-- End Counts Section -->
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Clients Section -->
+    
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -510,65 +477,50 @@
         <div class="section-title">
           <h2>F.A.Q</h2>
           <h3>Frequently Asked <span>Questions</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <p>Beberapa pertanyaan umum yang sering terlintas di benak anda.</p>
         </div>
 
         <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
 
           <li>
-            <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" class="" href="#faq1">Apakah WinMaxBali bisa On Call Service PC / laptop ?<i class="icofont-simple-up"></i></a>
             <div id="faq1" class="collapse show" data-parent=".faq-list">
               <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                Ya, Bisa. Kami juga melayani service panggilan untuk perbaikin PC, Laptop dan Printer anda dirumah / kantor.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Ketika saya ada project apakah bersedia untuk datang dan survei dulu sebelum deal,? <i class="icofont-simple-up"></i></a>
             <div id="faq2" class="collapse" data-parent=".faq-list">
               <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                Siap, Kami datang dengan segala persiapan, sampai perhitungan cost project nya nanti sehingga bisa anda pertimbangkan. Dan yang paling penting proses ini 
+                TIDAK KENA BIAYA SAMA SEKALI, untuk area badung, denpasar dan gianyar. 
               </p>
             </div>
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Brapa lama waktu yang di butuhkan untuk membuat website standar? <i class="icofont-simple-up"></i></a>
             <div id="faq3" class="collapse" data-parent=".faq-list">
               <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                2 Minggu, Kami mengerjakan website dalam waktu 2 minggu dengan template standar. 
+                Namun jika ingin custome tempalte enggine akan selesai dalam 2 minggu terhitung dari kesepakatan template.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">Bisa buat applikasi untuk IOS dan Android?<i class="icofont-simple-up"></i></a>
             <div id="faq4" class="collapse" data-parent=".faq-list">
               <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                Kami mengerjakan web dan mobile app, untuk ios dan Android.
               </p>
             </div>
           </li>
 
-          <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
-            <div id="faq5" class="collapse" data-parent=".faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
-            <div id="faq6" class="collapse" data-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
+          
         </ul>
 
       </div>
@@ -581,7 +533,7 @@
         <div class="section-title">
           <h2>Contact</h2>
           <h3><span>Contact Us</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <p>Hubungi kami Disini</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
