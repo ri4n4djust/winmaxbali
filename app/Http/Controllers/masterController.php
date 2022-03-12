@@ -36,4 +36,10 @@ class masterController extends Controller
             'data' => $posts
         ], 200);
     }
+
+    public function callback(Request $request)
+    {
+        $data = $request->data;
+        return view('callback', ['data' => $data]);
+    }
 }
