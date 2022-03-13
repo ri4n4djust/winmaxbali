@@ -39,7 +39,7 @@ class masterController extends Controller
 
     public function callback(Request $request)
     {
-        $data = $request->data;
-        return view('callback', ['data' => $data]);
+        $data = $request->all();
+        return view('callback', ['hasil' => $data]);
     }
 }
