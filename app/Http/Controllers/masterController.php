@@ -40,18 +40,18 @@ class masterController extends Controller
 
     public function callback(Request $request)
     {
-        $data = file_get_contents('php://input');
-        $my_file = 'file.txt';
-        $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-        fwrite($handle, $data);
-        fclose($handle);
+        // $data = file_get_contents('php://input');
+        // $my_file = 'file.txt';
+        // $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+        // fwrite($handle, $data);
+        // fclose($handle);
         // return view('callback', ['hasil' => $data]);
         // return response([$data], 200);
         // $data =  $request->input('status');
-        // POST /api.example.com/foo?callbackURL=http://my.server.com/bar
+        //POST /api.example.com/foo?callbackURL=http://my.server.com/bar
         // $body = json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
-        // $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success?callbackURL=https://winmaxbali.id/api/callback');
+        $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
         // $json = json_decode(file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success'), true);
         // echo $json;
         // return response([$data], 200);
@@ -61,6 +61,6 @@ class masterController extends Controller
         // $key_value = $body->data; //access key  
         // $collection = collect( $key_value);
         // $filtered = $collection->where('product_description', $cariop)->where('product_type', 'pulsa');
-        // return $response;
+        return $response;
     }
 }
