@@ -48,14 +48,15 @@ class masterController extends Controller
         // return view('callback', ['hasil' => $data]);
         // return response([$data], 200);
         // $data =  $request->input('status');
-        $body = json_decode($request->getContent(), true);
+        //POST /api.example.com/foo?callbackURL=http://my.server.com/bar
+        // $body = json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
-        // $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
+        $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success?callbackURL=https://winmaxbali.id/api/callback');
         // $json = json_decode(file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success'), true);
         // echo $json;
         // return response([$data], 200);
         // dd($request->all());
-        // $body = $response->getContent();
+        $body = $response->getContent();
         // $body =json_decode($response); 
         // $key_value = $body->data; //access key  
         // $collection = collect( $key_value);
