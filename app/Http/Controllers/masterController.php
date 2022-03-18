@@ -39,12 +39,15 @@ class masterController extends Controller
 
     public function callback(Request $request)
     {
-        $data = file_get_contents('php://input');
-        $my_file = 'file.txt';
-        $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-        fwrite($handle, $data);
-        fclose($handle);
-        return view('callback', ['hasil' => $data]);
+        // $data = file_get_contents('php://input');
+        // $my_file = 'file.txt';
+        // $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+        // fwrite($handle, $data);
+        // fclose($handle);
+        // return view('callback', ['hasil' => $data]);
         // return response([], 200);
+
+        dd(json_decode($request->getContent(), true));
+        return view('callback');
     }
 }
