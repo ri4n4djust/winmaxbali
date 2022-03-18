@@ -51,7 +51,7 @@ class masterController extends Controller
         //POST /api.example.com/foo?callbackURL=http://my.server.com/bar
         // $body = json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
-        $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
+        // $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
         // $json = json_decode(file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success'), true);
         // echo $json;
         // return response([$data], 200);
@@ -61,6 +61,9 @@ class masterController extends Controller
         // $key_value = $body->data; //access key  
         // $collection = collect( $key_value);
         // $filtered = $collection->where('product_description', $cariop)->where('product_type', 'pulsa');
-        return $response;
+        // return $response;
+        $json = file_get_contents('php://input');
+        $obj = json_decode($json, TRUE);
+        echo $obj ;
     }
 }
