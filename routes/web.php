@@ -14,7 +14,7 @@ use App\Http\Controllers\masterController;
 |
 */
 Route::get('/', [App\Http\Controllers\masterController::class, 'index']);
-Route::get('/callback/success', [App\Http\Controllers\masterController::class, 'callback']);
+Route::post('/callback/success', [App\Http\Controllers\masterController::class, 'callback']);
 // Route::get('/', function () {
 //     return view('welcome');
 // });
