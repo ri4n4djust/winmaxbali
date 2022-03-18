@@ -47,7 +47,7 @@ class masterController extends Controller
         // return view('callback', ['hasil' => $data]);
         // return response([], 200);
 
-        dd(json_decode($request->getContent(), true));
-        return view('callback');
+        // json_decode($request->getContent(), true);
+        return view(json_decode($request->getContent(), true));
     }
 }
