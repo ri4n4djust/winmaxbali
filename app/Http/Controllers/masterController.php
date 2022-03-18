@@ -47,10 +47,12 @@ class masterController extends Controller
         // fclose($handle);
         // return view('callback', ['hasil' => $data]);
         // return response([$data], 200);
-        $data =  $request->input();
+        // $data =  $request->input();
         // json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
         // $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
-        return response([$data], 200);
+        $json = json_decode(file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success'), true);
+        echo $json;
+        // return response([$data], 200);
     }
 }
