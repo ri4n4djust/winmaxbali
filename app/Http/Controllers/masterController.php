@@ -47,7 +47,7 @@ class masterController extends Controller
         // fclose($handle);
         // return view('callback', ['hasil' => $data]);
         // return response([$data], 200);
-        echo $request->all();
+        echo [$request->all()];
         // json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
         // $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
