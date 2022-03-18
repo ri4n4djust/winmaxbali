@@ -48,6 +48,9 @@ class masterController extends Controller
         // return response([], 200);
 
         // json_decode($request->getContent(), true);
-        return json_decode($request->getContent(), true);
+        // return json_decode($request->getContent(), true);
+        var_dump($request->all());
+        die(1);
+        return view('callback');
     }
 }
