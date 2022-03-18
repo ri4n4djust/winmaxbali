@@ -50,7 +50,7 @@ class masterController extends Controller
         // $data =  $request->input('status');
         // json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
-        $response = Http::get('https://developer.iak.id/api/sandbox/prepaid/success');
+        $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
         // $json = json_decode(file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success'), true);
         // echo $json;
         // return response([$data], 200);
