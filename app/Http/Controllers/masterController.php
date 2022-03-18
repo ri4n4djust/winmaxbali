@@ -64,6 +64,6 @@ class masterController extends Controller
         // return $response;
         $json = file_get_contents('php://input');
         $obj = json_decode($json, TRUE);
-        return $obj;
+        echo $obj ;
     }
 }
