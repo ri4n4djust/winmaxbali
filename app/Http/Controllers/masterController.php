@@ -49,10 +49,8 @@ class masterController extends Controller
 
         // json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
-        // var_dump($request->all());
-        // die(1);
-        // return view('callback');
-        Log::info("Received callback", $request->input());
-     die();
+        var_dump($request->all());
+        die(1);
+        return view('callback');
     }
 }
