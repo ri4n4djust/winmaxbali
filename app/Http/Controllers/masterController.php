@@ -39,7 +39,11 @@ class masterController extends Controller
 
     public function callback(Request $request)
     {
-        $data = $request->all();
+        $data = file_get_contents('https://prepaid.iak.dev/api/top-up');
+        // $my_file = 'file.txt';
+        // $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+        // fwrite($handle, $data);
+        // fclose($handle);
         return view('callback', ['hasil' => $data]);
     }
 }
