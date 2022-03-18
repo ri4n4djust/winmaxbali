@@ -47,19 +47,19 @@ class masterController extends Controller
         // fclose($handle);
         // return view('callback', ['hasil' => $data]);
         // return response([$data], 200);
-        $data =  $request->input('status');
+        // $data =  $request->input('status');
         // json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
-        // $response = Http::get('https://developer.iak.id/api/sandbox/prepaid/success');
+        $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
         // $json = json_decode(file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success'), true);
         // echo $json;
         // return response([$data], 200);
         // dd($request->all());
-        // $body = $response->getContent();
-        // $body =json_decode($body); 
+        $body = $response->getContent();
+        $body =json_decode($body); 
         // $key_value = $body->data; //access key  
         // $collection = collect( $key_value);
         // $filtered = $collection->where('product_description', $cariop)->where('product_type', 'pulsa');
-        return $data;
+        return $body;
     }
 }
