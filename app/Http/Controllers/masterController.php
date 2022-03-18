@@ -40,11 +40,11 @@ class masterController extends Controller
 
     public function callback(Request $request)
     {
-        $data = file_get_contents('php://input');
-        $my_file = 'file.txt';
-        $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-        fwrite($handle, $data);
-        fclose($handle);
+        // $data = file_get_contents('php://input');
+        // $my_file = 'file.txt';
+        // $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+        // fwrite($handle, $data);
+        // fclose($handle);
         // return view('callback', ['hasil' => $data]);
         // return response([$data], 200);
         // $data =  $request->input('status');
@@ -62,8 +62,8 @@ class masterController extends Controller
         // $collection = collect( $key_value);
         // $filtered = $collection->where('product_description', $cariop)->where('product_type', 'pulsa');
         // return $response;
-        // $json = file_get_contents('php://input');
-        // $obj = json_decode($json, TRUE);
-        // echo $obj ;
+        $json = file_get_contents('php://input');
+        $obj = json_decode($json, TRUE);
+        echo $obj ;
     }
 }
