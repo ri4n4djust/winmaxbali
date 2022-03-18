@@ -18,4 +18,17 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('/album', [App\Http\Controllers\masterController::class, 'indexAlbum']);
-Route::post('/callback', [App\Http\Controllers\masterController::class, 'callback']);
+// Route::post('/callback', [App\Http\Controllers\masterController::class, 'callback']);
+Route::post('/callback', function (Request $request) {
+    dd($request->all());
+    /*
+    [
+        'requesttransactionid' => '4522233',
+        'transactionid' => '6004994884',
+        'responsecode' => '01',
+        'status' => 'Successfull',
+        'statusdesc' => 'Successfully Processed Transaction',
+        'referenceno' => '312333883'
+    ]
+    */
+}); 
