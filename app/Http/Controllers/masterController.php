@@ -56,7 +56,7 @@ class masterController extends Controller
         // echo $json;
         // return response([$data], 200);
         // dd($request->all());
-        $body = $response->getContent();
+        // $body = $response->getContent();
         // $body =json_decode($response); 
         // $key_value = $body->data; //access key  
         // $collection = collect( $key_value);
