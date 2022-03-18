@@ -40,11 +40,11 @@ class masterController extends Controller
 
     public function callback(Request $request)
     {
-        // $data = file_get_contents('php://input');
-        // $my_file = 'file.txt';
-        // $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-        // fwrite($handle, $data);
-        // fclose($handle);
+        $data = file_get_contents('php://input');
+        $my_file = 'file.txt';
+        $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+        fwrite($handle, $data);
+        fclose($handle);
         // return view('callback', ['hasil' => $data]);
         // return response([$data], 200);
         // $data =  $request->input();
@@ -54,6 +54,6 @@ class masterController extends Controller
         // $json = json_decode(file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success'), true);
         // echo $json;
         // return response([$data], 200);
-        dd($request->all());
+        // dd($request->all());
     }
 }
