@@ -40,7 +40,7 @@ class masterController extends Controller
 
     public function callback(Request $request)
     {
-        $data = file_get_contents('php://input');
+        $data = file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success');
         $my_file = 'file.txt';
         $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
         fwrite($handle, $data);
