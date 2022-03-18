@@ -40,19 +40,19 @@ class masterController extends Controller
 
     public function callback(Request $request)
     {
-        // $data = file_get_contents('https://developer.iak.id/api/sandbox/prepaid/0');
-        // $my_file = 'file.txt';
-        // $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-        // fwrite($handle, $data);
-        // fclose($handle);
+        $data = file_get_contents('php://input');
+        $my_file = 'file.txt';
+        $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+        fwrite($handle, $data);
+        fclose($handle);
         // return view('callback', ['hasil' => $data]);
         // return response([$data], 200);
         // $data =  $request->input();
         // json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
         // $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
-        $json = json_decode(file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success'), true);
-        echo $json;
+        // $json = json_decode(file_get_contents('https://developer.iak.id/api/sandbox/prepaid/success'), true);
+        // echo $json;
         // return response([$data], 200);
     }
 }
