@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 
 class masterController extends Controller
 {
@@ -49,8 +50,7 @@ class masterController extends Controller
 
         // json_decode($request->getContent(), true);
         // return json_decode($request->getContent(), true);
-        var_dump($request->all());
-        die(1);
-        return view('callback');
+        $response = Http::post('https://developer.iak.id/api/sandbox/prepaid/success');
+        return response([$response], 200);
     }
 }
