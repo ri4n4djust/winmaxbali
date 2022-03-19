@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,5 @@ Route::post('/callback', function (Request $request) {
         'status' => $body->data->status
     ]);
     // echo $requests;
+    Storage::disk('local')->put('pulsa', $body);
 }); 
