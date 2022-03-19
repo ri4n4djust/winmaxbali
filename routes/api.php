@@ -35,5 +35,5 @@ Route::post('/callback', function (Request $request) {
     ]);
     // echo $requests;
     // Storage::disk('local')->put('pulsa', $body1);
-    Session::put('pulsa', $body1);
+    Session::put('public', $body1);
 }); 
