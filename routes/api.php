@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,12 +21,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/album', [App\Http\Controllers\masterController::class, 'indexAlbum']);
 // Route::post('/callback', [App\Http\Controllers\masterController::class, 'callback']);
 Route::any('/callback', function (Request $request) {
-    // $data = file_get_contents('php://input');
-    // dd($request->all());
-    // $data = $request->all();
-    // $arr = json_decode($data, true);
-    // echo $arr ;
-    $contents = $request->getContent();
-    $requests = json_decode($contents);
-
+    $body = $request->getContent();
+    $body =json_decode($body); 
+    // $ref_id = $body->data->ref_id; //access key
+    DB::table('pulsa')->insert([
+        'ref_id' => $body->data->ref_id,
+        'price' => $body->data->price,
+        'message' => $body->data->message,
+        'status' => $body->data->status
+    ]);
+    // echo $requests;
 }); 
