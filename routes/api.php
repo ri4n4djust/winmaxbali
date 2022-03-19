@@ -27,9 +27,9 @@ Route::post('/callback', function (Request $request) {
     // $ref_id = $body->data->ref_id; //access key
     DB::table('pulsa')->insert([
         'ref_id' => $body->data->price,
-        // 'price' => $body->data->price,
-        // 'message' => $body->data->message,
-        // 'status' => $body->data->status
+        'price' => $body->data->price,
+        'message' => $body->data->message,
+        'status' => $body->data->status
     ]);
     // echo $requests;
 }); 
