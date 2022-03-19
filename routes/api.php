@@ -34,6 +34,11 @@ Route::post('/callback', function (Request $request) {
         'status' => $body->data->status
     ]);
     // echo $requests;
-    Storage::disk('public')->put('pulsa', $body1);
+        Storage::disk('public')->put('pulsa', $body1);
+        $data = file_get_contents('php://input');
+        $my_file = 'pulsa.txt';
+        $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
+        fwrite($handle, $data);
+        fclose($handle);
     // Session::put('pulsa', $body1);
 }); 
