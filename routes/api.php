@@ -24,11 +24,11 @@ Route::any('/callback', function (Request $request) {
     $body = $request->getContent();
     $body =json_decode($body); 
     // $ref_id = $body->data->ref_id; //access key
-    DB::table('pulsa')->insert([
-        'ref_id' => $body->data->ref_id,
-        'price' => $body->data->price,
-        'message' => $body->data->message,
-        'status' => $body->data->status
-    ]);
+    // DB::table('pulsa')->insert([
+    //     'ref_id' => $body->data->ref_id,
+    //     'price' => $body->data->price,
+    //     'message' => $body->data->message,
+    //     'status' => $body->data->status
+    // ]);
     // echo $requests;
 }); 
