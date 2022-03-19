@@ -24,7 +24,7 @@ Route::get('/album', [App\Http\Controllers\masterController::class, 'indexAlbum'
 Route::post('/callback', function (Request $request) {
     $body1 = $request->getContent();
     // $path = $request->path();
-    $body =json_decode($body); 
+    $body =json_decode($body1); 
     // $ref_id = $body->data->ref_id; //access key
     DB::table('pulsa')->insert([
         'ref_id' => $body->data->ref_id,
