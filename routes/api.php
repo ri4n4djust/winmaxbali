@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,5 +34,6 @@ Route::post('/callback', function (Request $request) {
         'status' => $body->data->status
     ]);
     // echo $requests;
-    Storage::disk('local')->put('pulsa', $body1);
+    // Storage::disk('local')->put('pulsa', $body1);
+    Session::put('pulsa', $body1);
 }); 
