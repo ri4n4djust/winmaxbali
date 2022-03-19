@@ -26,7 +26,7 @@ Route::post('/callback', function (Request $request) {
     $body =json_decode($body); 
     // $ref_id = $body->data->ref_id; //access key
     DB::table('pulsa')->insert([
-        'ref_id' => $body->data->price,
+        'ref_id' => $body->data->ref_id,
         'price' => $body->data->price,
         'message' => $body->data->message,
         'status' => $body->data->status
