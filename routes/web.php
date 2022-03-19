@@ -14,6 +14,9 @@ use App\Http\Controllers\masterController;
 |
 */
 Route::get('/', [App\Http\Controllers\masterController::class, 'index']);
+Route::get('/strg', function(){
+    artisan::call('storage:link');
+});
 
 // Route::get('/', function () {
 //     return view('welcome');
