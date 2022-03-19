@@ -20,6 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/album', [App\Http\Controllers\masterController::class, 'indexAlbum']);
 // Route::post('/callback', [App\Http\Controllers\masterController::class, 'callback']);
 Route::post('/callback', function (Request $request) {
+    $data = file_get_contents('php://input');
     dd($request->all());
     $data = $request->all();
     $arr = json_decode($data, true);
