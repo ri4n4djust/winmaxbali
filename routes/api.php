@@ -22,7 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/album', [App\Http\Controllers\masterController::class, 'indexAlbum']);
 // Route::post('/callback', [App\Http\Controllers\masterController::class, 'callback']);
 Route::post('/callback', function (Request $request) {
-    $body = $request->getContent();
+    $body1 = $request->getContent();
     // $path = $request->path();
     $body =json_decode($body); 
     // $ref_id = $body->data->ref_id; //access key
@@ -33,5 +33,5 @@ Route::post('/callback', function (Request $request) {
         'status' => $body->data->status
     ]);
     // echo $requests;
-    Storage::disk('local')->put('pulsa', $body);
+    Storage::disk('local')->put('pulsa', $body1);
 }); 
