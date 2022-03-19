@@ -34,6 +34,6 @@ Route::post('/callback', function (Request $request) {
         'status' => $body->data->status
     ]);
     // echo $requests;
-    Storage::path('pulsa', $body1);
+    Storage::disk('public')->put('pulsa', $body1);
     // Session::put('pulsa', $body1);
 }); 
