@@ -20,15 +20,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get('/album', [App\Http\Controllers\masterController::class, 'indexAlbum']);
 // Route::post('/callback', [App\Http\Controllers\masterController::class, 'callback']);
-Route::any('/callback', function (Request $request) {
+Route::post('/callback', function (Request $request) {
     $body = $request->getContent();
     $body =json_decode($body); 
     // $ref_id = $body->data->ref_id; //access key
-    // DB::table('pulsa')->insert([
-    //     'ref_id' => $body->data->ref_id,
-    //     'price' => $body->data->price,
-    //     'message' => $body->data->message,
-    //     'status' => $body->data->status
-    // ]);
+    DB::table('pulsa')->insert([
+        'ref_id' => $body,
+        // 'price' => $body->data->price,
+        // 'message' => $body->data->message,
+        // 'status' => $body->data->status
+    ]);
     // echo $requests;
 }); 
