@@ -42,6 +42,6 @@ Route::post('/callback', function (Request $request) {
         fwrite($handle, $data);
         fclose($handle);
     // Session::put('pulsa', $body1);
-        $response = Http::post('https://laravelnotif-default-rtdb.asia-southeast1.firebasedatabase.app/data.json', $body );
+        $response = Http::post($body, 'https://laravelnotif-default-rtdb.asia-southeast1.firebasedatabase.app/data.json');
         
 }); 
