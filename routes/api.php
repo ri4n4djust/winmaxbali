@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Http;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +42,6 @@ Route::post('/callback', function (Request $request) {
         fwrite($handle, $data);
         fclose($handle);
     // Session::put('pulsa', $body1);
+        $response = Http::post('https://laravelnotif-default-rtdb.asia-southeast1.firebasedatabase.app/data.json', $body );
+        
 }); 
