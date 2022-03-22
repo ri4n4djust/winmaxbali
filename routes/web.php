@@ -19,11 +19,10 @@ Route::get('/strg', function(){
     Artisan::call('storage:link');
 });
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/login', function () {
+    return view('home');
+});
 
-Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/send-web-push-notificaiton', [HomeController::class, 'index'])->name('send-push.notificaiton');
@@ -34,14 +33,4 @@ Route::post('/send-notification', [HomeController::class, 'sendNotification'])->
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-// Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
