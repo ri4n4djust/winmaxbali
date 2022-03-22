@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\masterController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,13 @@ Route::get('/strg', function(){
 //     return view('welcome');
 // });
 
-// Auth::routes();
+Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/send-web-push-notificaiton', [HomeController::class, 'index'])->name('send-push.notificaiton');
+
+Route::post('/save-device-token', [HomeController::class, 'saveDeviceToken'])->name('save-device.token');
+Route::post('/send-notification', [HomeController::class, 'sendNotification'])->name('send.notification');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
