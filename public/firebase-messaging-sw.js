@@ -4,13 +4,14 @@ importScripts('https://www.gstatic.com/firebasejs/8.3.2/firebase-messaging.js');
 
 // Firebase SDK
 firebase.initializeApp({
-    apiKey: 'api-key',
-    authDomain: 'project-id.firebaseapp.com',
-    databaseURL: 'https://project-id.firebaseio.com',
-    projectId: 'project-id',
-    storageBucket: 'project-id.appspot.com',
-    messagingSenderId: 'sender-id',
-    appId: 'app-id',
+    apiKey: "AIzaSyBSa5ADouGl6BR4Qc8NO8gSyHsBqTXQewg",
+        authDomain: "laravelnotif.firebaseapp.com",
+        databaseURL: "https://laravelnotif-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "laravelnotif",
+        storageBucket: "laravelnotif.appspot.com",
+        messagingSenderId: "773446090612",
+        appId: "1:773446090612:web:a8d23e0f1c6afa0a2a3621",
+        measurementId: "G-SF60Q7Z149"
 });
 
 const messaging = firebase.messaging();
