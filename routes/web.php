@@ -23,7 +23,7 @@ Route::get('/strg', function(){
 //     return view('welcome');
 // });
 
-Auth::routes();
+// Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/send-web-push-notificaiton', [HomeController::class, 'index'])->name('send-push.notificaiton');
