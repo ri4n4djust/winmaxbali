@@ -47,6 +47,13 @@ class BroadcastableModelEventOccurred implements ShouldBroadcast
     public $queue;
 
     /**
+     * Indicates whether the job should be dispatched after all database transactions have committed.
+     *
+     * @var bool|null
+     */
+    public $afterCommit;
+
+    /**
      * Create a new event instance.
      *
      * @param  \Illuminate\Database\Eloquent\Model  $model
@@ -112,6 +119,17 @@ class BroadcastableModelEventOccurred implements ShouldBroadcast
         $this->channels = $channels;
 
         return $this;
+    }
+
+    /**
+     * Determine if the event should be broadcast synchronously.
+     *
+     * @return bool
+     */
+    public function shouldBroadcastNow()
+    {
+        return $this->event === 'deleted' &&
+               ! method_exists($this->model, 'bootSoftDeletes');
     }
 
     /**
