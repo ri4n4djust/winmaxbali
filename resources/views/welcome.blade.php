@@ -194,7 +194,7 @@
     
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -255,7 +255,8 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section> -->
+    <!-- End Services Section -->
 
     
 
@@ -314,7 +315,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/rian.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/smile.png" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -332,7 +333,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/wawan.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/smile.png" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -463,7 +464,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>Jln Padang Luwih No.73 Dalung Badung - Bali</p>
+              <p>Jln Jepun Bali No.10X Lukluk. Mengwi, Badung - Bali</p>
             </div>
           </div>
 

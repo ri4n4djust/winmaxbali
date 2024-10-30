@@ -9,9 +9,8 @@
       <div class="col-lg-3 col-md-6 footer-contact">
         <h3>WinMax Bali<span>.</span></h3>
         <p>
-          Jln Padang Luwih<br>
-          No.73 Dalung - Badung<br>
-          Bali<br><br>
+          Jln Jepun Bali No.10X Lukluk<br>
+          Mengwi. Badung - Bali<br>
           <strong>Phone:</strong> +6281 8688 114<br>
           <strong>Email:</strong> info@winmaxbali.id<br>
         </p>
