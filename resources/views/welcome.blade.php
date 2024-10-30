@@ -70,7 +70,7 @@
                 <i class="bx bx-store-alt"></i>
                 <div>
                   <h5>Offline Office</h5>
-                  <p>Offline office kami terletak di Jln Padang Luwih No.73 Dalung Badung - Bali</p>
+                  <p>Offline office kami terletak di Jln Jepun Bali No.10X Lukluk, Mengwi Badung - Bali</p>
                 </div>
               </li>
               <li>
