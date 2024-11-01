@@ -51,7 +51,7 @@
         <div class="section-title">
           <h2>About</h2>
           <h3>Find Out More <span>About Us</span></h3>
-          <p>Kami perusahan penyedia layanan hardware dan jasa dan juga software yang pergegang teguh akan kepuasan client kami</p>
+          <p>Kami perusahan penyedia layanan hardware, software dan jasa yang pergegang teguh akan kepuasan client kami</p>
         </div>
 
         <div class="row">
