@@ -4,7 +4,7 @@
   <title>WinMax Bali - Tech</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <meta name="google-adsense-account" content="ca-pub-6544692084532777">
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
