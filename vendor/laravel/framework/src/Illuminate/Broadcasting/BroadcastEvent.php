@@ -43,6 +43,13 @@ class BroadcastEvent implements ShouldQueue
     public $backoff;
 
     /**
+     * The maximum number of unhandled exceptions to allow before failing.
+     *
+     * @var int
+     */
+    public $maxExceptions;
+
+    /**
      * Create a new job handler instance.
      *
      * @param  mixed  $event
@@ -55,6 +62,7 @@ class BroadcastEvent implements ShouldQueue
         $this->timeout = property_exists($event, 'timeout') ? $event->timeout : null;
         $this->backoff = property_exists($event, 'backoff') ? $event->backoff : null;
         $this->afterCommit = property_exists($event, 'afterCommit') ? $event->afterCommit : null;
+        $this->maxExceptions = property_exists($event, 'maxExceptions') ? $event->maxExceptions : null;
     }
 
     /**
@@ -82,7 +90,9 @@ class BroadcastEvent implements ShouldQueue
 
         foreach ($connections as $connection) {
             $manager->connection($connection)->broadcast(
-                $channels, $name, $payload
+                $this->getConnectionChannels($channels, $connection),
+                $name,
+                $this->getConnectionPayload($payload, $connection)
             );
         }
     }
@@ -124,6 +134,40 @@ class BroadcastEvent implements ShouldQueue
         }
 
         return $value;
+    }
+
+    /**
+     * Get the channels for the given connection.
+     *
+     * @param  array  $channels
+     * @param  string  $connection
+     * @return array
+     */
+    protected function getConnectionChannels($channels, $connection)
+    {
+        return is_array($channels[$connection] ?? null)
+            ? $channels[$connection]
+            : $channels;
+    }
+
+    /**
+     * Get the payload for the given connection.
+     *
+     * @param  array  $payload
+     * @param  string  $connection
+     * @return array
+     */
+    protected function getConnectionPayload($payload, $connection)
+    {
+        $connectionPayload = is_array($payload[$connection] ?? null)
+            ? $payload[$connection]
+            : $payload;
+
+        if (isset($payload['socket'])) {
+            $connectionPayload['socket'] = $payload['socket'];
+        }
+
+        return $connectionPayload;
     }
 
     /**
