@@ -7312,7 +7312,7 @@ p + hr {
 }
 
 * + .row {
-	margin-top: 30px;
+	margin-top: 0px;
 }
 
 * + .big {
@@ -7398,7 +7398,7 @@ h3 + .owl-carousel, .heading-3 + .owl-carousel {
 		margin-top: 34px;
 	}
 	* + .row {
-		margin-top: 40px;
+		margin-top: 1px;
 	}
 	* + .text-block {
 		margin-top: 30px;

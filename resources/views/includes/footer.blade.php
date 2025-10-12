@@ -6,7 +6,7 @@
             <div class="col-lg-4">
             <div class="inset-right-1">
                 <h4>About Us</h4>
-                <p>At duaraka, we specialize in delivering innovative and reliable MEP solutions tailored to meet your unique needs. With our expertise in mechanical, electrical, and plumbing systems, we ensure efficiency, sustainability, and top-tier performance in every project.</p>
+                <p>Jasa service komputer, laptop, WiFi, dan CCTV di Bali. Teknisi berpengalaman, harga bersaing, dan garansi layanan profesional.</p>
             </div>
             </div>
             <div class="col-sm-6 col-md-5 col-lg-4">

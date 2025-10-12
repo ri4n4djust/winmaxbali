@@ -29,6 +29,14 @@ return [
     */
 
     'disks' => [
+        'blog' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/blog'),
+            'url' => env('APP_URL').'/storage/blog',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
+        ],
 
         'local' => [
             'driver' => 'local',

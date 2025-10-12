@@ -1,225 +1,351 @@
 @extends('layouts.default')
+
 @section('meta')
-    <title>The Awan Villa - Seminyak</title>
+    <title>The Awan Villa - One Bed Room</title>
     <meta content="best villa in bali" name="description">
     <meta content="bali room booking, car rental bali, bali management property" name="keywords">
 @endsection
 
 @section('content')
 
+<section class="section section-lg bg-default">
+  <div class="container">
+    <div class="row row-50">
+      <div class="col-12 text-center">
+        <h3 class="section-title wow-outer"><span class="wow slideInUp">Ongoing Projects</span></h3>
+      </div>
+      <div class="col-12 isotope-wrap">
+        <div class="isotope offset-top-2" data-isotope-layout="masonry" data-lightgallery="group" data-lg-thumbnail="false">
+          <div class="row row-30">
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-1-370x256.jpg')}}" alt="" width="370" height="256"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="/project-detail">Project 1</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-1.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-2-370x464.jpg')}}" alt="" width="370" height="464"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 2</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-2.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-3-370x256.jpg')}}" alt="" width="370" height="256"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 3</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-3.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-4-370x464.jpg')}}" alt="" width="370" height="464"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 4</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-4.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-6-370x464.jpg')}}" alt="" width="370" height="464"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 5</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-6.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-5-370x256.jpg')}}" alt="" width="370" height="256"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 6</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-5.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews & Star Ratings (paste here) -->
 <style>
+/* Simple, modern review UI */
+.reviews-wrap { max-width: 980px; margin: 40px auto; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#333; }
+.reviews-header { display:flex; gap:24px; align-items:center; margin-bottom:20px; }
+.reviews-average { display:flex; flex-direction:column; align-items:center; justify-content:center; width:160px; padding:18px; border-radius:8px; background:#fff; box-shadow:0 6px 18px rgba(18,24,39,0.06); }
+.reviews-average .big { font-size:40px; font-weight:700; color:#111; line-height:1; }
+.reviews-average .sub { color:#666; font-size:13px; margin-top:6px; }
+.reviews-list { flex:1; display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
+.card-review { background:#fff; padding:14px; border-radius:10px; box-shadow:0 6px 18px rgba(18,24,39,0.06); display:flex; gap:12px; align-items:flex-start; }
+.avatar { width:48px; height:48px; border-radius:50%; background:linear-gradient(135deg,#6b7cff,#45e6a6); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:16px; }
+.review-body { flex:1; }
+.review-meta { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px; }
+.review-name { font-weight:600; font-size:14px; }
+.review-date { color:#888; font-size:12px; }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+.star-rating { position:relative; width:120px; height:22px; display:inline-block; vertical-align:middle; }
+.star-back, .star-front { display:flex; gap:6px; align-items:center; position:absolute; left:0; top:0; height:100%; }
+.star-back svg, .star-front svg { width:20px; height:20px; display:block; }
+.star-back svg path { fill:#e4e5e9; }
+.star-front { overflow:hidden; white-space:nowrap; pointer-events:none; }
+.star-front svg path { fill:#ffc107; }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+/* compact legend under average */
+.ratings-breakdown { margin-top:10px; font-size:13px; color:#555; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+.btn-rate { display:inline-block; margin-left:8px; padding:8px 12px; background:#0066ff; color:#fff; border-radius:8px; text-decoration:none; font-weight:600; }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+/* interactive example */
+.rate-widget { margin-top:18px; display:flex; gap:12px; align-items:center; }
+.rate-widget .hint { color:#666; font-size:14px; }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+/* small responsive tweaks */
+@media (max-width:640px){ .reviews-header{ flex-direction:column; align-items:stretch } .reviews-average{ width:100%; flex-direction:row; justify-content:space-between; padding:12px } .reviews-list{ grid-template-columns:1fr } }
 </style>
 
-<!--Content Section-->
-<div id="services" class="scrollto clearfix">
-
-  <div class="row no-padding-bottom clearfix">
-
-      <div class="tengah">
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';font-weight: bold;">- Provided Services -</h2>
+<div class="reviews-wrap">
+  <div class="reviews-header">
+    <div class="reviews-average">
+      <div style="display:flex;flex-direction:column;align-items:center">
+        <div class="big" id="avg-score">4.6</div>
+        <div style="margin-top:6px;">
+          <div class="star-rating" data-rating="4.6">
+            <div class="star-back" aria-hidden="true">
+              <!-- 5 gray stars -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+            </div>
+            <div class="star-front" aria-hidden="true" style="width:0%">
+              <!-- 5 gold stars (width will be set via JS) -->
+              <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+            </div>
           </div>
-
-      </div>
-
-      <!--Content of the Right Side-->
-      <div class="col-2 wow fadeInLeft">
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	In-Villa Spa</h2>
-              <p class="section-subtitle">Indulge in the ultimate relaxation experience with our In-Villa Spa services. Enjoy rejuvenating treatments in the comfort and privacy of your own villa.</p>
-          </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-      </div>
-      <!--End Content Right Side-->
-
-      <div class="col-2 wow fadeInRight slideshow-container">
-        @php
-            $getImage = $galeries->where('id_album', 4);
-        @endphp
-        @foreach($getImage as $service)
-        <div class="mySlides fade">
-            <img src="{{ asset('storage/images/' . $service->nama_foto) }}" >
         </div>
-        @endforeach
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
       </div>
+      <div class="sub">based on <strong id="total-reviews">128</strong> reviews</div>
+    </div>
 
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
-      <!--Content of the Right Side-->
-      <div class="col-3 wow fadeInLeft">
-      <img src="{{asset('assets/images/floating.jpg')}}" alt="Dancer"/>
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	Floating Breakfast</h2>
-              <p class="section-subtitle">Start your day in paradise with our signature Floating Breakfast experience. Indulge in a Delicious Breakfast Enjoy a mouth-watering breakfast, carefully prepared by our chefs, and served to you in the comfort of your own private pool.
-              </p>
+    <div class="reviews-list" style="min-width:360px;">
+      <!-- Example review cards -->
+      <div class="card-review">
+        <div class="avatar">JS</div>
+        <div class="review-body">
+          <div class="review-meta">
+            <div>
+              <div class="review-name">Jessica Stone</div>
+              <div class="review-date">April 12, 2025</div>
+            </div>
+            <div>
+              <div class="star-rating" data-rating="5.0" aria-label="5 out of 5 stars">
+                <div class="star-back">
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                </div>
+                <div class="star-front" style="width:100%">
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+          <div class="review-text">Excellent service and fast communication. Highly recommended!</div>
+        </div>
       </div>
-      <!--End Content Right Side-->
 
-      <!-- <div class="col-6 wow fadeInRight">
-          <img src="{{asset('assets/images/dining.jpg')}}" alt="Dancer"/>
-      </div> -->
-
-      <div class="col-3 wow fadeInLeft">
-      <img src="{{asset('assets/images/romantic.jpg')}}" alt="Dancer"/>
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	Romantic Dinner</h2>
-              <p class="section-subtitle">Celebrate love and romance with a unforgettable dinner experience under the stars.</p>
+      <div class="card-review">
+        <div class="avatar">AL</div>
+        <div class="review-body">
+          <div class="review-meta">
+            <div>
+              <div class="review-name">Alex Liu</div>
+              <div class="review-date">March 3, 2025</div>
+            </div>
+            <div>
+              <div class="star-rating" data-rating="4.2" aria-label="4.2 out of 5 stars">
+                <div class="star-back">
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                </div>
+                <div class="star-front" style="width:0%">
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+          <div class="review-text">Great value. A little delay in delivery but overall a good experience.</div>
+        </div>
       </div>
 
-      <div class="col-3 wow fadeInLeft">
-      <img src="{{asset('assets/images/honeymoon.jpg')}}" alt="Dancer"/>
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	Honeymoon Decoration</h2>
-              <p class="section-subtitle">Make your dream honeymoon even more unforgettable with our romantic decoration packages. Transform your villa into a love nest with our beautifully crafted decoration packages
-              </p>
+      <div class="card-review">
+        <div class="avatar">MK</div>
+        <div class="review-body">
+          <div class="review-meta">
+            <div>
+              <div class="review-name">Maya K.</div>
+              <div class="review-date">Feb 20, 2025</div>
+            </div>
+            <div>
+              <div class="star-rating" data-rating="3.8" aria-label="3.8 out of 5 stars">
+                <div class="star-back">
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                </div>
+                <div class="star-front" style="width:0%">
+                  <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+          <div class="review-text">Good quality but packaging could be improved.</div>
+        </div>
       </div>
-
-      <div class="col-3 wow fadeInLeft">
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	Airport Pickup</h2>
-              <p class="section-subtitle">Pickup transfer and drop.</p>
-          </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-      </div>
-
-      <div class="col-3 wow fadeInLeft">
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	Motorbike Rental</h2>
-              <p class="section-subtitle"></p>
-          </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-      </div>
-
-
+    </div>
   </div>
 
+  <div class="ratings-breakdown" aria-hidden="true">
+    <div>5★ <strong>78%</strong></div>
+    <div>4★ <strong>12%</strong></div>
+    <div>3★ <strong>6%</strong></div>
+    <div>2★ <strong>2%</strong></div>
+    <div>1★ <strong>2%</strong></div>
+    <a class="btn-rate" href="#maps">Leave a review</a>
+  </div>
 
+  <!-- Interactive example: live star input -->
+  <div class="rate-widget" style="margin-top:22px;">
+    <div class="hint">Rate this project:</div>
+    <div id="interactive" class="star-rating" data-rating="0" aria-label="Rate">
+      <div class="star-back" style="cursor:pointer;">
+        <svg data-value="1" viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+        <svg data-value="2" viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+        <svg data-value="3" viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+        <svg data-value="4" viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+        <svg data-value="5" viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+      </div>
+      <div class="star-front" style="width:0%; pointer-events:none;">
+        <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+      </div>
+    </div>
+    <div id="rate-value" style="font-weight:700;">0</div>
+  </div>
 </div>
-<!--End of Content Section-->
+
+<script>
+// Utility: initialize star fronts from data-rating attributes
+function initStarRatings(root=document){
+  const wrappers = root.querySelectorAll('.star-rating');
+  wrappers.forEach(w=>{
+    const rating = parseFloat(w.getAttribute('data-rating')) || 0;
+    const front = w.querySelector('.star-front');
+    if(front){
+      const pct = Math.max(0, Math.min(5, rating)) / 5 * 100;
+      front.style.width = pct + '%';
+    }
+  });
+}
+
+// Interactive rating widget
+(function(){
+  initStarRatings();
+  // set average display as example (could be computed server-side)
+  const avgEl = document.getElementById('avg-score');
+  const totalEl = document.getElementById('total-reviews');
+  if(avgEl && totalEl){
+    // example values already present; could update here if needed
+  }
+
+  // interactive star input
+  const interactive = document.getElementById('interactive');
+  if(interactive){
+    const back = interactive.querySelector('.star-back');
+    const front = interactive.querySelector('.star-front');
+    const valueEl = document.getElementById('rate-value');
+    let current = 0;
+
+    function setValue(v){
+      current = v;
+      interactive.setAttribute('data-rating', v);
+      front.style.width = (v/5*100) + '%';
+      if(valueEl) valueEl.textContent = v.toFixed(1);
+    }
+
+    back.addEventListener('mousemove', function(e){
+      const rect = back.getBoundingClientRect();
+      const x = Math.max(0, Math.min(rect.width, e.clientX - rect.left));
+      const pct = x / rect.width;
+      const hoverRating = Math.ceil(pct * 5 * 2) / 2; // half-star steps
+      front.style.width = (hoverRating/5*100) + '%';
+    });
+
+    back.addEventListener('mouseleave', function(){
+      front.style.width = (current/5*100) + '%';
+    });
+
+    back.addEventListener('click', function(e){
+      const rect = back.getBoundingClientRect();
+      const x = Math.max(0, Math.min(rect.width, e.clientX - rect.left));
+      const pct = x / rect.width;
+      const selected = Math.ceil(pct * 5 * 2) / 2;
+      setValue(selected);
+      // Example: send selected to server via fetch/AJAX
+      // fetch('/reviews', {method:'POST', body:JSON.stringify({rating:selected}), headers:{'Content-Type':'application/json'}})
+    });
+  }
+})();
+</script>
 
 
+
+
+<!--maps-->
+<section id="maps" class="scrollto clearfix">
+  <div class="row-maps clearfix">
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15779.000096976235!2d115.1756207!3d-8.6199808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91058e289e7ebc3!2sWinMax%20Computer!5e0!3m2!1sen!2sid!4v1629275614666!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+</section>
+<!--End of maps-->
    
 
 @stop

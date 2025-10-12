@@ -16,6 +16,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -39,12 +40,21 @@ Route::middleware('auth')->group(function () {
     Route::patch('/admin-page/update/{id}', [App\Http\Controllers\pageController::class, 'update'])->name('admin.page.update');
     Route::delete('/admin-page/delete/{id}', [App\Http\Controllers\pageController::class, 'destroy'])->name('admin.page.delete');
 
+    Route::get('/admin-blog', [App\Http\Controllers\blogController::class, 'index'])->name('admin.blog');
+    Route::get('/admin-blog/create', [App\Http\Controllers\blogController::class, 'create'])->name('admin.blog.create');
+    Route::post('/admin-blog/store', [App\Http\Controllers\blogController::class, 'store'])->name('admin.blog.store');
+    Route::get('/admin-blog/edit/{id}', [App\Http\Controllers\blogController::class, 'edit'])->name('admin.blog.edit');
+    Route::patch('/admin-blog/update/{id}', [App\Http\Controllers\blogController::class, 'update'])->name('admin.blog.update');
+    Route::delete('/admin-blog/delete/{id}', [App\Http\Controllers\blogController::class, 'destroy'])->name('admin.blog.delete');
+
 
     Route::post('/dropzone/store', [DropzoneController::class, 'store'])->name('dropzone.store');
     Route::post('/dropzone/store-sl', [DropzoneController::class, 'storeSl'])->name('dropzone.storeSl');
     Route::post('/dropzone/store-bg', [DropzoneController::class, 'storeBg'])->name('dropzone.storeBg');
+    Route::post('/dropzone/store-blog', [DropzoneController::class, 'storeBlog'])->name('dropzone.storeBlog');
     Route::delete('/dropzone/delete', [DropzoneController::class, 'destroy'])->name('dropzone.delete');
     Route::delete('/dropzone/delete-bg', [DropzoneController::class, 'destroyBg'])->name('dropzone.deleteBg');
+    Route::delete('/dropzone/delete-blog', [DropzoneController::class, 'destroyBlog'])->name('dropzone.deleteBlog');
     Route::delete('/dropzone/delete-sl', [DropzoneController::class, 'destroySl'])->name('dropzone.deleteSl');
 
     
@@ -62,7 +72,7 @@ Route::get('/blog-detail/{slug}', [App\Http\Controllers\webController::class , '
 Route::get('/admin-slide', [App\Http\Controllers\galleryController::class , 'dataDasboard'])->name('admin.dataDasboard');
 
 Route::get('/gallery', [App\Http\Controllers\webController::class , 'gallery']);
-Route::get('/provide-services', [App\Http\Controllers\webController::class , 'services']);
+Route::get('/service', [App\Http\Controllers\webController::class , 'services']);
 
 Route::get('/project-detail', [App\Http\Controllers\projectController::class , 'projectDetail']);
 Route::get('/about-us', [App\Http\Controllers\webController::class , 'aboutUs']);

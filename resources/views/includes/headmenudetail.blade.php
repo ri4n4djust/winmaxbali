@@ -17,9 +17,8 @@
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/blog">Blog</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">About Us</a></li>
-                    <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a> -->
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/on-progress">On Progres Projects</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/finish">Finish Projects</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/service">Services</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/projects">Projects</a>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/contact">Contacts</a></li>
                 </ul>
                 </div>
@@ -30,7 +29,7 @@
     </div>
 </header>
 <!-- Breadcrumbs-->
-<section class="breadcrumbs-custom bg-image context-dark" style="background-image: url({{asset('assets/images/breadcrumbs-image-1.jpg')}});">
+<section class="breadcrumbs-custom bg-image context-dark" style="background-image: url({{asset('assets/images/breadcrumbs-image-1.webp')}});">
     <div class="breadcrumbs-custom-inner">
         <div class="container breadcrumbs-custom-container">
         <div class="breadcrumbs-custom-main">

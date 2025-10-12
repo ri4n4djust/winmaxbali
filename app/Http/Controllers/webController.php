@@ -26,9 +26,9 @@ class webController extends Controller
         // var_dump($kamar[0]->foto);
         $promos = Promo::where('status', '1')->get();
         $albums = DB::table('albums')->get();
-        $galeries = DB::table('galeri')->get();
+        $blogs = DB::table('blogs')->get();
         $slides = DB::table('slide')->get();
-        return view('pages.blog', compact('promos', 'albums', 'galeries', 'slides'));
+        return view('pages.blog', compact('promos', 'albums', 'blogs', 'slides'));
     }
     public function blogDetail($slug){
         // $slug = $request->query('slug');

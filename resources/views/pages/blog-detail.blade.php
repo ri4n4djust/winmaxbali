@@ -1,139 +1,286 @@
 @extends('layouts.default')
 @section('meta')
     <title>WinMax Bali - {{ $blogDetail[0]->slug }}</title>
-    <meta content="{!! $blogDetail[0]->content !!}" name="description">
-    <meta content="{{ $blogDetail[0]->slug }}" name="keywords">
+    <meta content="{!! $blogDetail[0]->meta_description !!}" name="description">
+    <meta content="{{ $blogDetail[0]->meta_keywords }}" name="keywords">
 @endsection
 @section('content')
     
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
+    <!-- <div class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Hotel Detail</h2>
-          <ol>
-            <li><a href="/">Home</a></li>
-            <li>{{ $blogDetail[0]->title }}</li>
-          </ol>
+          <h2>{{ $blogDetail[0]->title }}</h2>
         </div>
 
       </div>
-    </div><!-- End Breadcrumbs -->
+    </div> -->
+    <!-- End Breadcrumbs -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">
 
             <div class="section-header">
-            <!-- <h2>About Us</h2> -->
+            <h3>{{ $blogDetail[0]->title }}</h3>
             <!-- <p>Learn More </p> -->
             </div>
 
             <div class="row gy-4">
-                <div class="col-lg-7 position-relative about-img" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-lg-12 position-relative about-img" style="border:1px solid #ddd; padding:10px;" data-aos="fade-up" data-aos-delay="150">
+                    <!-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> -->
+                    <hr>
+                    Iklan
+                iklan
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-8 position-relative about-img" data-aos="fade-up" data-aos-delay="150">
                     
                     <div class="position-relative mt-4">
                         
-                        <h4>{{ $blogDetail[0]->title }}</h4>
-                            @php 
-                                $rata2 = 0 ; 
-                                $count = 0;
-                            @endphp
-                        
-                    
-
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-
-                        @php $gmbra = explode(";",$blogDetail[0]->image) ; @endphp
-                        @php $gmbr = array_slice($gmbra, 0, -1) ; @endphp
-                        @foreach($gmbr as $value)
-                    
-                        <li data-target=".carouselExampleCaptions" data-slide-to="{{ $loop->index }}" class="{{ $loop->first ? 'active' : '' }}"></li>
-                        <!-- {{ count($gmbr) }} -->
-
-                        @endforeach
-                        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-                        
-                        </ol>
-                        <div class="carousel-inner">
-                        
-                        @foreach($gmbr as $key => $slider)
-                        <!-- {{ $key }} -->
-                        <div class="carousel-item {{$key == 0 ? 'active' : ''}}">
-                            <img src="{{ asset('assets/img/rooms/'. $slider) }}" class="d-block w-100" alt="">
-                        </div>
-                        @endforeach
-                        
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                        </a>
-
-                        <!-- Thumbnails -->
-                        <div class="carousel-indicators" style="margin-bottom: -20px;width:100px">
-                            @foreach($gmbr as $key => $slider)
-                                <button type="button" data-target="#carouselExampleIndicators" data-slide-to="{{ $loop->index }}" class="{{$loop->first ? 'active' : ''}}" aria-current="true" aria-label="Slide 1" >
-                                <img class="d-block w-100" src="{{ asset('assets/img/rooms/'. $slider) }}" class="img-fluid" />
-                                </button>
-                            @endforeach   
-                        </div>
-                        <!-- Thumbnails -->
-                        
-                        
-                    </div>
-                    
-                    
-
-                    <div style="margin-top:40px;"></div>
-                    <div class="row">
-                    </div>
-                    
-                    <p>{!! $blogDetail[0]->content !!}</p>
-                    <p>
-                    <!-- <iframe src="https://www.airbnb.co.id/calendar/ical/1008390716123586176.ics?s=cf056deabfae92dc6d2000654b37a31e" height="200" width="300" title="Iframe Example"></iframe>  -->
                    
-                    </p>
+                        @php
+                            $raw = $blogDetail[0]->image ?? '';
+                            $parts = array_values(array_filter(array_map('trim', explode(',', $raw))));
+                            $second = $parts[1] ?? null;
+                        @endphp
+
+                        @if($second)
+                            <img src="{{ asset('storage/blog/'.$second) }}" class="img-fluid" alt="{{ $blogDetail[0]->title ?? 'image' }}">
+                        @endif
+                        
+                        
+                        
+
+                        <div >
+                            @php
+                            $html = $blogDetail[0]->content ?? '';
+                            libxml_use_internal_errors(true);
+                            $doc = new \DOMDocument();
+                            $doc->loadHTML(mb_convert_encoding($html, 'HTML-ENTITIES', 'UTF-8'));
+                            $xpath = new \DOMXPath($doc);
+                            $nodes = $xpath->query('//h1|//h2|//h3|//h4|//h5|//h6');
+
+                            $toc = [];
+                            $ids = [];
+
+                            foreach ($nodes as $node) {
+                                $level = intval(substr($node->nodeName, 1));
+                                $text = trim($node->textContent);
+                                if ($text === '') {
+                                    continue;
+                                }
+
+                                // slugify / create id
+                                $slug = preg_replace('/[^a-z0-9\-]+/i', '-', trim($text));
+                                $slug = strtolower(trim($slug, '-'));
+                                if ($slug === '') {
+                                    $slug = 'section';
+                                }
+                                $base = $slug;
+                                $i = 1;
+                                while (in_array($slug, $ids)) {
+                                    $slug = $base . '-' . $i++;
+                                }
+                                $ids[] = $slug;
+
+                                $node->setAttribute('id', $slug);
+                                $toc[] = ['id' => $slug, 'text' => $text, 'level' => $level];
+                            }
+
+                            // serialize modified HTML back to string and overwrite original content so the later {!! $blogDetail[0]->content !!} renders anchors
+                            $newHtml = '';
+                            $body = $doc->getElementsByTagName('body')->item(0);
+                            if ($body) {
+                                foreach ($body->childNodes as $child) {
+                                    $newHtml .= $doc->saveHTML($child);
+                                }
+                            } else {
+                                $newHtml = $html;
+                            }
+                            $blogDetail[0]->content = $newHtml;
+
+                            // render TOC
+                            if (count($toc) > 0) {
+                                // add a small script that injects a Show/Hide button into the TOC header and toggles the .list-group
+                                echo <<<'JS'
+                                <script>
+                                document.addEventListener("DOMContentLoaded", function(){
+                                    var header = document.querySelector('.toc-card .card-header');
+                                    var list = document.querySelector('.toc-card .list-group');
+                                    if (!header || !list) return;
+
+                                    // ensure header is flex to place button to the right
+                                    header.style.display = 'flex';
+                                    header.style.alignItems = 'center';
+                                    header.style.gap = '0.5rem';
+
+                                    var btn = document.createElement('button');
+                                    btn.type = 'button';
+                                    btn.className = 'btn btn-sm btn-light';
+                                    btn.setAttribute('aria-expanded', 'true');
+                                    btn.setAttribute('aria-label', 'Toggle table of contents');
+                                    btn.textContent = 'Hide';
+
+                                    // append button to header
+                                    header.appendChild(btn);
+
+                                    btn.addEventListener('click', function(){
+                                        var expanded = btn.getAttribute('aria-expanded') === 'true';
+                                        if (expanded) {
+                                            list.style.display = 'none';
+                                            btn.textContent = 'Show';
+                                            btn.setAttribute('aria-expanded', 'false');
+                                        } else {
+                                            list.style.display = '';
+                                            btn.textContent = 'Hide';
+                                            btn.setAttribute('aria-expanded', 'true');
+                                        }
+                                    });
+                                });
+                                </script>
+                                JS;
+                                $output = '<aside class="card toc-card mb-3" style="position:sticky;top:90px;max-height:420px;overflow:auto;">';
+                                $output .= '<div class="card-header bg-primary text-white"><strong>Daftar Isi</strong></div>';
+                                $output .= '<div class="list-group list-group-flush">';
+
+                                foreach ($toc as $item) {
+                                    $level = max(1, intval($item['level']));
+                                    $indent = ($level - 1) * 12; // pixels indentation per level
+                                    $output .= '<a href="#' . e($item['id']) . '" class="list-group-item list-group-item-action d-flex align-items-start" style="padding-left:' . $indent . 'px">';
+                                    $output .= '<span class="toc-item-text">' . e($item['text']) . '</span>';
+                                    $output .= '</a>';
+                                }
+
+                                $output .= '</div></aside>';
+
+                                // Inline styles & small JS for smooth scrolling and nicer hover states
+                                $output .= '<style>
+                                    .toc-card .list-group-item{border:0;padding-top:.5rem;padding-bottom:.5rem;color:#212529;}
+                                    .toc-card .list-group-item:hover{background:#f8f9fa;}
+                                    .toc-card .card-header{font-size:1rem;}
+                                    @media (max-width:767px){ .toc-card{position:relative;top:auto;max-height:300px;} }
+                                </style>';
+
+                                $output .= '<script>
+                                    document.addEventListener("DOMContentLoaded", function(){
+                                        document.querySelectorAll(".toc-card a").forEach(function(a){
+                                            a.addEventListener("click", function(e){
+                                                e.preventDefault();
+                                                var id = this.getAttribute("href").slice(1);
+                                                var el = document.getElementById(id);
+                                                if (el) {
+                                                    var offset = 80; // adjust to match fixed header height
+                                                    var top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+                                                    window.scrollTo({ top: top, behavior: "smooth" });
+                                                }
+                                            });
+                                        });
+                                    });
+                                </script>';
+
+                                echo $output;
+                            }
+                            @endphp
+                        </div>
+                        @php
+                        $html = $blogDetail[0]->content ?? '';
+                        libxml_use_internal_errors(true);
+                        $doc = new \DOMDocument();
+                        $doc->loadHTML(mb_convert_encoding($html, 'HTML-ENTITIES', 'UTF-8'));
+                        $body = $doc->getElementsByTagName('body')->item(0);
+
+                        $sections = [];
+                        if ($body) {
+                            $current = ['id' => 'intro', 'title' => null, 'level' => 0, 'content' => ''];
+                            for ($i = 0; $i < $body->childNodes->length; $i++) {
+                                $node = $body->childNodes->item($i);
+                                if ($node->nodeType === XML_ELEMENT_NODE && preg_match('/^h([1-6])$/i', $node->nodeName, $m)) {
+                                    // push previous section if it has content
+                                    if ($current['title'] !== null || trim($current['content']) !== '') {
+                                        $sections[] = $current;
+                                    }
+                                    $id = $node->getAttribute('id') ?: 'section-' . count($sections);
+                                    $title_html = $doc->saveHTML($node);
+                                    $level = intval($m[1]);
+                                    $current = ['id' => $id, 'title' => $title_html, 'level' => $level, 'content' => ''];
+                                } else {
+                                    $current['content'] .= $doc->saveHTML($node);
+                                }
+                            }
+                            // push last
+                            if ($current['title'] !== null || trim($current['content']) !== '') {
+                                $sections[] = $current;
+                            }
+                        }
+                        @endphp
+
+                        @if(!empty($sections))
+                            <div class="blog-slices">
+
+                                @foreach($sections as $index => $slice)
+                                    @php
+                                        // images in $parts: 0 => first image, 1 => second (shown above). start slices from index 2
+                                        $imgIndex = $index + 2;
+                                        $second = $parts[$imgIndex] ?? null;
+                                    @endphp
+
+                                    <article id="{{ $slice['id'] }}" class="blog-slice mb-4">
+                                        @if($slice['title'])
+                                            {!! $slice['title'] !!}
+                                        @endif
+
+                                        {!! $slice['content'] !!}
+
+                                        @if($second)
+                                            <img src="{{ asset('storage/blog/'.$second) }}" class="img-fluid" alt="{{ $blogDetail[0]->title ?? 'image' }}">
+                                        @endif
+
+                                        <span class="ms-2 anchor-permalink" style="font-size:.95rem;">
+                                            <a href="#{{ $slice['id'] }}" class="text-decoration-none text-muted" aria-label="Permalink to this section" title="Permalink to this section">#</a>
+                                        </span>
+                                    </article>
+                                @endforeach
+                            </div>
+
+                            <style>
+                                .blog-slice + .blog-slice { border-top: 1px solid #eee; padding-top: 1rem; }
+                                .blog-slice h1, .blog-slice h2, .blog-slice h3, .blog-slice h4, .blog-slice h5, .blog-slice h6 {
+                                    margin-top: .5rem;
+                                    margin-bottom: .5rem;
+                                }
+                            </style>
+                        @endif
+                    
+                        <p>
+                        Posted on {{ optional($blogDetail[0]->created_at)->format('F d, Y') ?? '-' }} by admin                   
+                        </p>
                     </div>
                     <!-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> -->
                 </div>
-                <div class="col-lg-5 d-flex" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="300">
                 
-                    <div class="content ps-0 ps-lg-5" >
-                        <div class="section-header">
-                            <h4>Booking Detail</h4>
-                            <!-- <p>Learn More </p> -->
-                        </div>
+                    <div class="content mt-4" >
                         
-                    
 
                 
-                    <div class="row">
-                        <div class="section-header">
-                            <h4>Most interesting In Bali</h4>
+                        <div class="row">
+                            <div class="section-header">
+                                <h4>Most interesting In Bali</h4>
+                            </div>
+                            
                         </div>
-                        
-                    </div>
 
-                    <div class="row">
-                        <div class="section-header">
-                            <h4>Bali Activities</h4>
+                        <div class="row">
+                            <div class="section-header">
+                                <h4>Bali Activities</h4>
+                            </div>
+                            
                         </div>
-                        
-                    </div>
-                    
-                    
-                    
-                    
-                    
+                                        
                     
                 </div>
             </div>

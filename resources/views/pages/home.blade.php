@@ -2,17 +2,203 @@
 
 @section('meta')
     <title>WinMax Bali</title>
-    <meta content="Duaraka mep cunstructions service" name="description">
-    <meta content="Industrial MEP services, Best MEP contractors for hotels, HVAC installation and maintenance" name="keywords">
+    <meta content="WinMax Bali: Solusi komputer dan IT untuk rumah dan bisnis. Produk berkualitas, layanan cepat, dan dukungan teknis terpercaya di Bali" name="description">
+    <meta content="Butuh teknisi komputer, jaringan, atau CCTV? Kami hadir dengan layanan service IT lengkap untuk rumah dan bisnis, langsung ke lokasi Anda" name="keywords">
     <meta property="og:title" content="WinMax Bali">
-    <meta property="og:description" content="Duaraka mep cunstructions service.">
+    <meta property="og:description" content="WinMax Bali : Solusi IT.">
     <meta property="og:image" content="{{ asset('assets/images/ogfoto.png') }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
 @endsection
 
 @section('content')
-
+<!-- Advantages and Achievements-->
+<section class="section section-lg text-center bg-default">
+  <div class="container">
+    <h3 class="section-title wow-outer"><span class="wow slideInUp">About Us</span></h3>
+    <p class="wow-outer"><span class="text-width-1 wow slideInDown">Berdiri sejak Tahun 2014 kami terus berkomitmen untuk mejadi vendor dan partner yang terbaik bagi client kami
+      Setelah melewati masa ke masa, perubahan terus terjadi didunia teknologi dan sistem informasi, kami WinMaxBali terus berinovasi dan mengiringi kemajuan teknoligi tersebut dengan mengedepankan service kepada client membuat kami bertahan dan berkembang sampai saat ini.</span>
+    </p>
+    <div class="row row-50">
+      <div class="col-6 col-md-3 wow-outer">
+        <!-- Counter Minimal-->
+        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
+          <div class="counter-minimal-icon linearicons-mustache-glasses"></div>
+          <div class="counter-minimal-main">
+            <div class="counter">365</div>
+          </div>
+          <h5 class="counter-minimal-title">Finish Project</h5>
+        </article>
+      </div>
+      <div class="col-6 col-md-3 wow-outer">
+        <!-- Counter Minimal-->
+        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
+          <div class="counter-minimal-icon linearicons-camera2"></div>
+          <div class="counter-minimal-main">
+            <div class="counter">156</div>
+          </div>
+          <h5 class="counter-minimal-title">Ongoing Projects</h5>
+        </article>
+      </div>
+      <div class="col-6 col-md-3 wow-outer">
+        <!-- Counter Minimal-->
+        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
+          <div class="counter-minimal-icon linearicons-shutter"></div>
+          <div class="counter-minimal-main">
+            <div class="counter">10</div>
+          </div>
+          <h5 class="counter-minimal-title">Years of Experience</h5>
+        </article>
+      </div>
+      <div class="col-6 col-md-3 wow-outer">
+        <!-- Counter Minimal -->
+        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
+          <div class="counter-minimal-icon linearicons-picture"></div>
+          <div class="counter-minimal-main">
+            <div class="counter">392</div>
+          </div>
+          <h5 class="counter-minimal-title">Annual Clients</h5>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-lg">
+  <div class="container">
+    <div class="row row-50 justify-content-lg-between offset-top-1">
+      <div class="col-12">
+        <h3 class="section-title text-center wow-outer"><span class="wow slideInDown">Frequently Asked Questions</span></h3>
+      </div>
+      <div class="col-lg-7 col-xl-6">
+        <!-- Bootstrap collapse-->
+        <div class="card-group-custom card-group-corporate wow-outer" id="accordion1" role="tablist" aria-multiselectable="false">
+            
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".1s">
+              <div class="card-header" id="accordion1-heading-2" role="tab">
+                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-2" aria-controls="accordion1-collapse-2" aria-expanded="false">
+                  Apakah WinMaxBali bisa On Call Service PC / laptop ?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-collapse-2" role="tabpanel" aria-labelledby="accordion1-heading-2">
+                <div class="card-body">
+                  <p>Ya, Bisa. Kami juga melayani service panggilan untuk perbaikin PC, Laptop dan Printer anda dirumah / kantor. </p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".15s">
+              <div class="card-header" id="accordion1-heading-3" role="tab">
+                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-3" aria-controls="accordion1-collapse-3" aria-expanded="false">
+                  Ketika saya ada project apakah bersedia untuk datang dan survei dulu sebelum deal?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-collapse-3" role="tabpanel" aria-labelledby="accordion1-heading-3">
+                <div class="card-body">
+                  <p>Siap, Kami datang dengan segala persiapan, sampai perhitungan cost project nya nanti sehingga bisa anda pertimbangkan. Dan yang paling penting proses ini TIDAK KENA BIAYA SAMA SEKALI, untuk area badung, denpasar, gianyar dan Tabanan. </p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".2s">
+              <div class="card-header" id="accordion1-heading-4" role="tab">
+                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-4" aria-controls="accordion1-collapse-4" aria-expanded="false">
+                  Brapa lama waktu yang di butuhkan untuk membuat website standar?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-collapse-4" role="tabpanel" aria-labelledby="accordion1-heading-4">
+                <div class="card-body">
+                  <p>2 Minggu, Kami mengerjakan website dalam waktu 2 minggu dengan template standar. Namun jika ingin custome tempalte enggine akan selesai dalam 4 minggu terhitung dari kesepakatan template. </p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".05s">
+              <div class="card-header" id="accordion1-heading-1" role="tab">
+                <div class="card-title"><a role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-1" aria-controls="accordion1-collapse-1" aria-expanded="true">
+                  Bisa buat applikasi untuk IOS dan Android?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse show" id="accordion1-collapse-1" role="tabpanel" aria-labelledby="accordion1-heading-1">
+                <div class="card-body">
+                  <p>Kami mengerjakan web dan mobile app, untuk ios dan Android.</p>
+                </div>
+              </div>
+            </article>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="progress-linear-outer wow-outer">
+                    <!-- Linear progress bar-->
+                    <article class="progress-linear wow slideInDown" data-wow-delay=".05s">
+                      <div class="progress-header">
+                        <p>Service Komputer & Laptop </p><span class="progress-value">95</span>
+                      </div>
+                      <div class="progress-bar-linear-wrap">
+                        <div class="progress-bar-linear"></div>
+                      </div>
+                    </article>
+        </div>
+        <div class="progress-linear-outer wow-outer">
+                    <!-- Linear progress bar-->
+                    <article class="progress-linear wow slideInDown" data-wow-delay=".1s">
+                      <div class="progress-header">
+                        <p>CCTV</p><span class="progress-value">100</span>
+                      </div>
+                      <div class="progress-bar-linear-wrap">
+                        <div class="progress-bar-linear progress-red"></div>
+                      </div>
+                    </article>
+        </div>
+        <div class="progress-linear-outer wow-outer">
+                    <!-- Linear progress bar-->
+                    <article class="progress-linear wow slideInDown" data-wow-delay=".15s">
+                      <div class="progress-header">
+                        <p>Jaringan, WIFI dan Server</p><span class="progress-value">95</span>
+                      </div>
+                      <div class="progress-bar-linear-wrap">
+                        <div class="progress-bar-linear progress-blue"></div>
+                      </div>
+                    </article>
+        </div>
+        <div class="progress-linear-outer wow-outer">
+                    <!-- Linear progress bar-->
+                    <article class="progress-linear wow slideInDown" data-wow-delay=".2s">
+                      <div class="progress-header">
+                        <p>PABX dan Telephone</p><span class="progress-value">95</span>
+                      </div>
+                      <div class="progress-bar-linear-wrap">
+                        <div class="progress-bar-linear progress-black"></div>
+                      </div>
+                    </article>
+        </div>
+        <div class="progress-linear-outer wow-outer">
+                    <!-- Linear progress bar-->
+                    <article class="progress-linear wow slideInDown" data-wow-delay=".2s">
+                      <div class="progress-header">
+                        <p>Bahasa Pemrograman ( PHP, Vue, Javascript)</p><span class="progress-value">95</span>
+                      </div>
+                      <div class="progress-bar-linear-wrap">
+                        <div class="progress-bar-linear progress-green"></div>
+                      </div>
+                    </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-xs bg-gray-700 text-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-md-12">
+        <div class="box-cta-thin">
+          <h4 class="wow-outer"><span class="wow slideInRight">Sedang mencari  <span class="text-italic">desain jaringan data server, wifi dan CCTV?</span> </span></h4>
+          <div class="wow-outer button-outer"><a class="button button-primary button-winona wow slideInLeft" href="#">Hubungi kami</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Projects - Modern Layout-->
 <section class="section section-lg bg-default">
   <div class="container">
@@ -89,184 +275,113 @@
     </div>
   </div>
 </section>
-<!-- Advantages and Achievements-->
-<section class="section section-lg text-center bg-default">
+
+<section class="section section-lg bg-gray-100">
   <div class="container">
-    <h3 class="section-title wow-outer"><span class="wow slideInUp">About Us</span></h3>
-    <p class="wow-outer"><span class="text-width-1 wow slideInDown">With over 10 years of experience in the industry, we have successfully completed projects ranging from commercial buildings to industrial facilities. Our team consists of highly skilled engineers and technicians dedicated to delivering high-quality MEP systems.</span></p>
-    <div class="row row-50">
-      <div class="col-6 col-md-3 wow-outer">
-        <!-- Counter Minimal-->
-        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
-          <div class="counter-minimal-icon linearicons-mustache-glasses"></div>
-          <div class="counter-minimal-main">
-            <div class="counter">365</div>
-          </div>
-          <h5 class="counter-minimal-title">Finish Project</h5>
-        </article>
+    <h3 class="section-title text-center wow-outer"><span class="wow slideInUp">Valued Customers</span></h3>
+    <p class="text-center wow-outer"><span class="wow slideInDown">Trusted by businesses and homeowners across Bali — thank you to our clients for their continued support.</span></p>
+
+    <!-- Client logos -->
+    <div class="row row-30 justify-content-center align-items-center offset-top-2 wow-outer">
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <figure class="mb-0">
+          <img src="{{ asset('storage/client/logo.png') }}" alt="Client 1" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+        </figure>
       </div>
-      <div class="col-6 col-md-3 wow-outer">
-        <!-- Counter Minimal-->
-        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
-          <div class="counter-minimal-icon linearicons-camera2"></div>
-          <div class="counter-minimal-main">
-            <div class="counter">156</div>
-          </div>
-          <h5 class="counter-minimal-title">Ongoing Projects</h5>
-        </article>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <figure class="mb-0">
+          <img src="{{ asset('assets/images/clients/client-2.png') }}" alt="Client 2" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+        </figure>
       </div>
-      <div class="col-6 col-md-3 wow-outer">
-        <!-- Counter Minimal-->
-        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
-          <div class="counter-minimal-icon linearicons-shutter"></div>
-          <div class="counter-minimal-main">
-            <div class="counter">10</div>
-          </div>
-          <h5 class="counter-minimal-title">Years of Experience</h5>
-        </article>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <figure class="mb-0">
+          <img src="{{ asset('assets/images/clients/client-3.png') }}" alt="Client 3" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+        </figure>
       </div>
-      <div class="col-6 col-md-3 wow-outer">
-        <!-- Counter Minimal -->
-        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
-          <div class="counter-minimal-icon linearicons-picture"></div>
-          <div class="counter-minimal-main">
-            <div class="counter">392</div>
-          </div>
-          <h5 class="counter-minimal-title">Annual Clients</h5>
-        </article>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <figure class="mb-0">
+          <img src="{{ asset('assets/images/clients/client-4.png') }}" alt="Client 4" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+        </figure>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <figure class="mb-0">
+          <img src="{{ asset('assets/images/clients/client-5.png') }}" alt="Client 5" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+        </figure>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <figure class="mb-0">
+          <img src="{{ asset('assets/images/clients/client-6.png') }}" alt="Client 6" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+        </figure>
       </div>
     </div>
-  </div>
-</section>
-<section class="section section-lg">
-  <div class="container">
-    <div class="row row-50 justify-content-lg-between offset-top-1">
-      <div class="col-12">
-        <h3 class="section-title text-center wow-outer"><span class="wow slideInDown">Frequently Asked Questions</span></h3>
-      </div>
-      <div class="col-lg-7 col-xl-6">
-        <!-- Bootstrap collapse-->
-        <div class="card-group-custom card-group-corporate wow-outer" id="accordion1" role="tablist" aria-multiselectable="false">
-            
-            <!-- Bootstrap card-->
-            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".1s">
-              <div class="card-header" id="accordion1-heading-2" role="tab">
-                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-2" aria-controls="accordion1-collapse-2" aria-expanded="false">Do you provide engineering design services?
-                    <div class="card-arrow"></div></a></div>
-              </div>
-              <div class="collapse" id="accordion1-collapse-2" role="tabpanel" aria-labelledby="accordion1-heading-2">
-                <div class="card-body">
-                  <p>Yes, our team includes experienced engineers who design efficient and cost-effective MEP systems tailored to your project needs.</p>
+
+    <!-- Testimonials carousel -->
+    <div class="row justify-content-center offset-top-3 wow-outer">
+      <div class="col-lg-8">
+        <div id="valuedCustomersCarousel" class="carousel slide" data-ride="carousel" data-interval="6000" aria-label="Valued customer testimonials">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card border-0 shadow-sm p-4">
+                <div class="d-flex align-items-start">
+                  <img src="{{ asset('assets/images/clients/client-1.png') }}" alt="Client 1" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
+                  <div class="text-left">
+                    <p class="mb-2" style="font-style:italic;">"Layanan cepat dan teknisi sangat berpengalaman. Semua masalah jaringan kantor kami tuntas dalam satu hari."</p>
+                    <div class="small text-muted">- Putu Santosa, Owner @ BaliFoods</div>
+                  </div>
                 </div>
               </div>
-            </article>
-            <!-- Bootstrap card-->
-            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".15s">
-              <div class="card-header" id="accordion1-heading-3" role="tab">
-                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-3" aria-controls="accordion1-collapse-3" aria-expanded="false">How do you ensure compliance with local regulations?
-                    <div class="card-arrow"></div></a></div>
-              </div>
-              <div class="collapse" id="accordion1-collapse-3" role="tabpanel" aria-labelledby="accordion1-heading-3">
-                <div class="card-body">
-                  <p>We strictly adhere to industry standards and local building codes, ensuring all installations meet safety and efficiency requirements.</p>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card border-0 shadow-sm p-4">
+                <div class="d-flex align-items-start">
+                  <img src="{{ asset('assets/images/clients/client-2.png') }}" alt="Client 2" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
+                  <div class="text-left">
+                    <p class="mb-2" style="font-style:italic;">"Pasang CCTV cepat, rapi kabelnya, dan penjelasan sangat jelas. Sangat direkomendasikan."</p>
+                    <div class="small text-muted">- Nyoman Arya, Manager @ VillaMimpi</div>
+                  </div>
                 </div>
               </div>
-            </article>
-            <!-- Bootstrap card-->
-            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".2s">
-              <div class="card-header" id="accordion1-heading-4" role="tab">
-                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-4" aria-controls="accordion1-collapse-4" aria-expanded="false">Can you provide a detailed cost estimate?
-                    <div class="card-arrow"></div></a></div>
-              </div>
-              <div class="collapse" id="accordion1-collapse-4" role="tabpanel" aria-labelledby="accordion1-heading-4">
-                <div class="card-body">
-                  <p>Absolutely! We offer transparent pricing and detailed cost breakdowns to help you plan your budget effectively.</p>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card border-0 shadow-sm p-4">
+                <div class="d-flex align-items-start">
+                  <img src="{{ asset('assets/images/clients/client-3.png') }}" alt="Client 3" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
+                  <div class="text-left">
+                    <p class="mb-2" style="font-style:italic;">"Buat website company profile kami sangat profesional, komunikasi jelas dan after-sales bagus."</p>
+                    <div class="small text-muted">- Made Putri, Director @ SurfBali Co.</div>
+                  </div>
                 </div>
               </div>
-            </article>
-            <!-- Bootstrap card-->
-            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".05s">
-              <div class="card-header" id="accordion1-heading-1" role="tab">
-                <div class="card-title"><a role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-1" aria-controls="accordion1-collapse-1" aria-expanded="true">Do you offer value engineering solutions?
-                    <div class="card-arrow"></div></a></div>
-              </div>
-              <div class="collapse show" id="accordion1-collapse-1" role="tabpanel" aria-labelledby="accordion1-heading-1">
-                <div class="card-body">
-                  <p>Yes, we analyze alternative designs and materials to optimize cost without compromising quality.</p>
-                </div>
-              </div>
-            </article>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="progress-linear-outer wow-outer">
-                    <!-- Linear progress bar-->
-                    <article class="progress-linear wow slideInDown" data-wow-delay=".05s">
-                      <div class="progress-header">
-                        <p>Electricity</p><span class="progress-value">95</span>
-                      </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear"></div>
-                      </div>
-                    </article>
-        </div>
-        <div class="progress-linear-outer wow-outer">
-                    <!-- Linear progress bar-->
-                    <article class="progress-linear wow slideInDown" data-wow-delay=".1s">
-                      <div class="progress-header">
-                        <p>Plumbing</p><span class="progress-value">95</span>
-                      </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear progress-red"></div>
-                      </div>
-                    </article>
-        </div>
-        <div class="progress-linear-outer wow-outer">
-                    <!-- Linear progress bar-->
-                    <article class="progress-linear wow slideInDown" data-wow-delay=".15s">
-                      <div class="progress-header">
-                        <p>Electronics</p><span class="progress-value">95</span>
-                      </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear progress-blue"></div>
-                      </div>
-                    </article>
-        </div>
-        <div class="progress-linear-outer wow-outer">
-                    <!-- Linear progress bar-->
-                    <article class="progress-linear wow slideInDown" data-wow-delay=".2s">
-                      <div class="progress-header">
-                        <p>IT Support</p><span class="progress-value">95</span>
-                      </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear progress-green"></div>
-                      </div>
-                    </article>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#valuedCustomersCarousel" role="button" data-slide="prev" aria-label="Previous testimonial">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#valuedCustomersCarousel" role="button" data-slide="next" aria-label="Next testimonial">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="section section-xs bg-gray-700 text-center">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-sm-10 col-md-12">
-        <div class="box-cta-thin">
-          <h4 class="wow-outer"><span class="wow slideInRight">Looking for  <span class="text-italic">Quality MEP Desaining?</span> </span></h4>
-          <div class="wow-outer button-outer"><a class="button button-primary button-winona wow slideInLeft" href="#">Get in Touch</a></div>
-        </div>
-      </div>
-    </div>
+
+    <style>
+      /* small hover polish for logos */
+      .section .row img:hover { filter: none !important; transform: translateY(-4px); transition: transform .25s ease; }
+      .carousel .card { background: #fff; }
+    </style>
   </div>
 </section>
 
+
 <!-- Latest Blog Posts-->
-<section class="section section-lg bg-gray-100 text-center">
+<!-- <section class="section section-lg bg-gray-100 text-center">
   <div class="container">
     <h3 class="section-title wow-outer"><span class="wow slideInDown">Latest Finish Projects</span></h3>
     <div class="row row-50">
       <div class="col-sm-6 col-lg-4 wow-outer">
-        <!-- Post Classic-->
         <article class="post-classic wow slideInLeft"><a class="post-classic-media" href="#"><img src="{{asset('assets/images/sidebar-blog-1-370x264.jpg')}}" alt="" width="370" height="264"/></a>
           <ul class="post-classic-meta">
             <li><a class="button-winona" href="#">News</a></li>
@@ -278,7 +393,6 @@
         </article>
       </div>
       <div class="col-sm-6 col-lg-4 wow-outer">
-        <!-- Post Classic-->
         <article class="post-classic wow slideInLeft" data-wow-delay=".05s"><a class="post-classic-media" href="#"><img src="{{asset('assets/images/sidebar-blog-2-370x264.jpg')}}" alt="" width="370" height="264"/></a>
           <ul class="post-classic-meta">
             <li><a class="button-winona text-red" href="#">Innovations</a></li>
@@ -290,7 +404,6 @@
         </article>
       </div>
       <div class="col-sm-6 col-lg-4 wow-outer">
-        <!-- Post Classic-->
         <article class="post-classic wow slideInLeft" data-wow-delay=".1s"><a class="post-classic-media" href="#"><img src="{{asset('assets/images/sidebar-blog-3-370x264.jpg')}}" alt="" width="370" height="264"/></a>
           <ul class="post-classic-meta">
             <li><a class="button-winona text-green" href="#">Tips</a></li>
@@ -303,7 +416,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 @stop

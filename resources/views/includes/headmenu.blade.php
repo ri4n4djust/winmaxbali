@@ -24,7 +24,6 @@
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/blog">Blog</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">About Us</a></li>
-                    <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a> -->
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/service">Services</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/projects">Projects</a>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/contact">Contacts</a></li>
@@ -50,7 +49,7 @@
             </div>
             <div class="col-md-6 col-lg-5 col-xl-4 col-offset-1">
             <div class="wow-outer">
-                <h5 class="font-weight-light wow slideInUp" data-wow-delay=".2s">Based in denpasar bali, we work includes designing and installing systems for drainage, water supply, heating, air conditioning, lighting, electrical power.</h5>
+                <h5 class="font-weight-light wow slideInUp" data-wow-delay=".2s">Spesialis service komputer, laptop, jaringan, dan CCTV di Bali. Teknisi ramah, solusi cepat, dan hasil memuaskan.</h5>
             </div>
             <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInUp" href="#" data-wow-delay=".3s">View Portfolio</a></div>
             </div>
