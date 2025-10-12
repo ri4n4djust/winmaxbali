@@ -76,11 +76,11 @@
             <!-- Bootstrap card-->
             <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".1s">
               <div class="card-header" id="accordion1-heading-2" role="tab">
-                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-2" aria-controls="accordion1-collapse-2" aria-expanded="false">
+                <div class="card-title"><a role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-2" aria-controls="accordion1-collapse-2" aria-expanded="false">
                   Apakah WinMaxBali bisa On Call Service PC / laptop ?
                     <div class="card-arrow"></div></a></div>
               </div>
-              <div class="collapse" id="accordion1-collapse-2" role="tabpanel" aria-labelledby="accordion1-heading-2">
+              <div class="collapse show" id="accordion1-collapse-2" role="tabpanel" aria-labelledby="accordion1-heading-2">
                 <div class="card-body">
                   <p>Ya, Bisa. Kami juga melayani service panggilan untuk perbaikin PC, Laptop dan Printer anda dirumah / kantor. </p>
                 </div>
@@ -115,11 +115,11 @@
             <!-- Bootstrap card-->
             <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".05s">
               <div class="card-header" id="accordion1-heading-1" role="tab">
-                <div class="card-title"><a role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-1" aria-controls="accordion1-collapse-1" aria-expanded="true">
+                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-1" aria-controls="accordion1-collapse-1" aria-expanded="true">
                   Bisa buat applikasi untuk IOS dan Android?
                     <div class="card-arrow"></div></a></div>
               </div>
-              <div class="collapse show" id="accordion1-collapse-1" role="tabpanel" aria-labelledby="accordion1-heading-1">
+              <div class="collapse" id="accordion1-collapse-1" role="tabpanel" aria-labelledby="accordion1-heading-1">
                 <div class="card-body">
                   <p>Kami mengerjakan web dan mobile app, untuk ios dan Android.</p>
                 </div>
@@ -301,6 +301,16 @@
       <div class="col-6 col-sm-4 col-md-2 text-center">
         <figure class="mb-0">
           <img src="{{ asset('assets/images/clients/client-4.png') }}" alt="Client 4" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+        </figure>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <figure class="mb-0">
+          <img src="{{ asset('assets/images/clients/client-5.png') }}" alt="Client 5" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+        </figure>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <figure class="mb-0">
+          <img src="{{ asset('assets/images/clients/client-6.png') }}" alt="Client 6" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
         </figure>
       </div>
       <div class="col-6 col-sm-4 col-md-2 text-center">

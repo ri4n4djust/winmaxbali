@@ -29,7 +29,7 @@
     </div>
 </header>
 <!-- Breadcrumbs-->
-<section class="breadcrumbs-custom bg-image context-dark" style="background-image: url({{asset('assets/images/breadcrumbs-image-1.webp')}});">
+<section class="breadcrumbs-custom bg-image context-dark" style="background-image: url({{asset('assets/images/'.$banner)}});">
     <div class="breadcrumbs-custom-inner">
         <div class="container breadcrumbs-custom-container">
         <div class="breadcrumbs-custom-main">

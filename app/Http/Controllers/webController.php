@@ -27,8 +27,8 @@ class webController extends Controller
         $promos = Promo::where('status', '1')->get();
         $albums = DB::table('albums')->get();
         $blogs = DB::table('blogs')->get();
-        $slides = DB::table('slide')->get();
-        return view('pages.blog', compact('promos', 'albums', 'blogs', 'slides'));
+        $blogtypes = DB::table('blogtypes')->get();
+        return view('pages.blog', compact('promos', 'albums', 'blogs', 'blogtypes'));
     }
     public function blogDetail($slug){
         // $slug = $request->query('slug');

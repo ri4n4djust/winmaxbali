@@ -28,8 +28,16 @@
 
     @if (Route::is('home'))
       @include('includes.headmenu')
-    @else
-      @include('includes.headmenudetail')
+    @elseif (Route::is('blog') || Route::is('blog.detail'))
+      @include('includes.headmenudetail', ['banner' => '1.webp' ?? null])
+    @elseif (Route::is('about-us'))
+      @include('includes.headmenudetail', ['banner' => '2.webp' ?? null])
+    @elseif (Route::is('service'))
+      @include('includes.headmenudetail', ['banner' => '3.webp' ?? null])
+    @elseif (Route::is('projects'))
+      @include('includes.headmenudetail', ['banner' => '4.webp' ?? null])
+    @elseif (Route::is('contact'))
+      @include('includes.headmenudetail', ['banner' => '5.webp' ?? null])
     @endif 
 
     <main id="content">

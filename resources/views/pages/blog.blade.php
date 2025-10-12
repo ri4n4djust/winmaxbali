@@ -33,9 +33,25 @@
               <img src="{{ asset('storage/blog/'.$firstImage) }}" alt="{{ $blog->title ?? 'Blog image' }}" width="370" height="264"/>
             </a>
             <ul class="post-classic-meta">
-              <li><a class="button-winona {{ $blog->category_class ?? '' }}" href="#">{{ $blog->category->name ?? ($blog->category ?? 'News') }}</a></li>
+              <li><a class="button-winona {{ $blog->category_class ?? '' }}" href="#">
+              @php
+                $typeName = null;
+                if (isset($blogtypes)) {
+                  if (is_object($blogtypes) && method_exists($blogtypes, 'firstWhere')) {
+                    $found = $blogtypes->firstWhere('id', $blog->type);
+                    $typeName = data_get($found, 'name', $found);
+                  } elseif (is_array($blogtypes) && array_key_exists($blog->type, $blogtypes)) {
+                    $typeName = $blogtypes[$blog->type];
+                  } else {
+                    $typeName = data_get($blogtypes, $blog->type);
+                  }
+                }
+                $typeName = $typeName ?? ($blog->type_name ?? $blog->type ?? 'News');
+              @endphp
+              {{ $typeName }}
+              </a></li>
               <li>
-                <time datetime="{{ optional($blog->created_at)->format('Y') ?? '2019' }}">{{ optional($blog->created_at)->format('M d, Y \a\t h:i a') ?? 'Apr 21, 2019 at 12:05 pm' }}</time>
+              <time datetime="{{ \Carbon\Carbon::parse($blog->created_at)->format('d M Y, H:i') ?? '2019' }}">{{ \Carbon\Carbon::parse($blog->created_at)->format('d M Y, H:i') ?? 'Apr 21, 2019 at 12:05 pm' }}</time>
               </li>
             </ul>
             <h4 class="post-classic-title"><a href="{{ url('/blog-detail', $blog->slug ?? $blog->id) }}">{{ $blog->title ?? 'Untitled' }}</a></h4>
