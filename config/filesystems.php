@@ -38,6 +38,15 @@ return [
             'report' => false,
         ],
 
+        'service' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/service'),
+            'url' => env('APP_URL').'/storage/service',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app/private'),

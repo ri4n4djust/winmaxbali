@@ -47,14 +47,20 @@ Route::middleware('auth')->group(function () {
     Route::patch('/admin-blog/update/{id}', [App\Http\Controllers\blogController::class, 'update'])->name('admin.blog.update');
     Route::delete('/admin-blog/delete/{id}', [App\Http\Controllers\blogController::class, 'destroy'])->name('admin.blog.delete');
 
+    Route::get('/admin-service', [App\Http\Controllers\serviceController::class, 'index'])->name('admin.service');
+    Route::get('/admin-service/edit/{id}', [App\Http\Controllers\serviceController::class, 'edit'])->name('admin.service.edit');
+    Route::patch('/admin-service/update/{id}', [App\Http\Controllers\serviceController::class, 'update'])->name('admin.service.update');
+    Route::delete('/admin-service/delete/{id}', [App\Http\Controllers\serviceController::class, 'destroy'])->name('admin.service.delete');
 
     Route::post('/dropzone/store', [DropzoneController::class, 'store'])->name('dropzone.store');
     Route::post('/dropzone/store-sl', [DropzoneController::class, 'storeSl'])->name('dropzone.storeSl');
     Route::post('/dropzone/store-bg', [DropzoneController::class, 'storeBg'])->name('dropzone.storeBg');
     Route::post('/dropzone/store-blog', [DropzoneController::class, 'storeBlog'])->name('dropzone.storeBlog');
+    Route::post('/dropzone/store-service', [DropzoneController::class, 'storeService'])->name('dropzone.storeService');
     Route::delete('/dropzone/delete', [DropzoneController::class, 'destroy'])->name('dropzone.delete');
     Route::delete('/dropzone/delete-bg', [DropzoneController::class, 'destroyBg'])->name('dropzone.deleteBg');
     Route::delete('/dropzone/delete-blog', [DropzoneController::class, 'destroyBlog'])->name('dropzone.deleteBlog');
+    Route::delete('/dropzone/delete-service', [DropzoneController::class, 'destroyService'])->name('dropzone.deleteService');
     Route::delete('/dropzone/delete-sl', [DropzoneController::class, 'destroySl'])->name('dropzone.deleteSl');
 
     

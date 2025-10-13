@@ -25,8 +25,8 @@
                     <x-nav-link :href="route('admin.blog')" :active="request()->routeIs('admin.blog')">
                         Blogs
                     </x-responsive-nav-link>
-                     <x-nav-link :href="route('admin.page')" :active="request()->routeIs('admin.page')">
-                        Pages
+                     <x-nav-link :href="route('admin.service')" :active="request()->routeIs('admin.service')">
+                        Services
                     </x-nav-link>
                 </div>
             </div>
@@ -92,8 +92,8 @@
             <x-responsive-nav-link :href="route('admin.blog')" :active="request()->routeIs('admin.blog')">
                 Blogs
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('admin.page')" :active="request()->routeIs('admin.page')">
-                Pages
+            <x-responsive-nav-link :href="route('admin.service')" :active="request()->routeIs('admin.service')">
+                Services
             </x-responsive-nav-link>
         </div>
 

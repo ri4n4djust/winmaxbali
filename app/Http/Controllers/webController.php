@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Promo;
 use App\Models\Page;
+use App\Models\Service;
 use Illuminate\Support\Facades\DB;
 
 
@@ -52,26 +53,7 @@ class webController extends Controller
         return view('pages.blog-detail', compact('categories', 'albums', 'popularPosts', 'blogDetail'));
     }
     
-    public function oneBedroom(){
-
-        // var_dump($kamar[0]->foto);
-        $galeries = DB::table('galeri')->where('id_album', '1')->get();
-        $pages = Page::where('slug', 'one-bed-room')->first();
-        return view('pages.one-bedroom', compact('galeries', 'pages'));
-    }
-    public function twoBedroom(){
-
-        // var_dump($kamar[0]->foto);
-        $galeries = DB::table('galeri')->where('id_album', '2')->get();
-        $pages = Page::where('slug', 'two-bed-room')->first();
-        return view('pages.two-bedroom', compact('galeries', 'pages'));
-    }
-    public function dining(){
-
-        // var_dump($kamar[0]->foto);
-
-        return view('pages.dinning');
-    }
+    
     public function gallery(){
 
         // var_dump($kamar[0]->foto);
@@ -86,7 +68,8 @@ class webController extends Controller
         // var_dump($kamar[0]->foto);
         $galeries = DB::table('galeri')->get();
         $pages = Page::where('slug', 'provide-services')->first();
-        return view('pages.services', compact('pages', 'galeries'));
+        $services = Service::all(); ;
+        return view('pages.services', compact('pages', 'services', 'galeries'));
     }
     public function specialOffers(){
 

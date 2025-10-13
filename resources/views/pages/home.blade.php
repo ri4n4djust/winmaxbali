@@ -35,7 +35,7 @@
         <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
           <div class="counter-minimal-icon linearicons-camera2"></div>
           <div class="counter-minimal-main">
-            <div class="counter">156</div>
+            <div class="counter">4</div>
           </div>
           <h5 class="counter-minimal-title">Ongoing Projects</h5>
         </article>
@@ -249,26 +249,7 @@
                   <div class="thumbnail-corporate-dummy"></div>
                 </article>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-6-370x464.jpg')}}" alt="" width="370" height="464"/>
-                  <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 5</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-6.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                  </div>
-                  <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-5-370x256.jpg')}}" alt="" width="370" height="256"/>
-                  <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 6</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-5.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                  </div>
-                  <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
+            
           </div>
         </div>
       </div>

@@ -13,15 +13,36 @@
 
 @section('content')
 
+<section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">💻 Layanan IT Kami</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            @foreach($services as $service)
+                <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                    <div class="text-4xl text-blue-500 mb-4">
+                        <img src="{{ asset('storage/service/'.$service->image) }}" alt="{{ $blog->title ?? 'Blog image' }}" width="370" height="264"/>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">{{ $service->title }}</h3>
+                    <p class="text-gray-600 text-sm">{!! $service->content !!}</p>
+                    <a href="#" class="mt-4 inline-block text-sm text-blue-600 hover:underline">
+                        Lihat Detail →
+                    </a>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
 <section class="section section-lg bg-default">
   <div class="container">
     <div class="row row-50">
       <div class="col-12 text-center">
-        <h3 class="section-title wow-outer"><span class="wow slideInUp">Ongoing Projects</span></h3>
+        <h3 class="section-title wow-outer"><span class="wow slideInUp">💻 Layanan IT Kami</span></h3>
       </div>
+      
       <div class="col-12 isotope-wrap">
         <div class="isotope offset-top-2" data-isotope-layout="masonry" data-lightgallery="group" data-lg-thumbnail="false">
           <div class="row row-30">
+            
             <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
                 <!-- Thumbnail Corporate-->
                 <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-1-370x256.jpg')}}" alt="" width="370" height="256"/>
