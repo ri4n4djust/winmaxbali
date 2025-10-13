@@ -1,9 +1,14 @@
 @extends('layouts.default')
 
 @section('meta')
-    <title>The Awan Villa - One Bed Room</title>
-    <meta content="best villa in bali" name="description">
-    <meta content="bali room booking, car rental bali, bali management property" name="keywords">
+    <title>WinMax Bali - Our Services</title>
+    <meta content="WinMax Bali: Solusi komputer dan IT untuk rumah dan bisnis. Produk berkualitas, layanan cepat, dan dukungan teknis terpercaya di Bali" name="description">
+    <meta content="Butuh teknisi komputer, jaringan, atau CCTV? Kami hadir dengan layanan service IT lengkap untuk rumah dan bisnis, langsung ke lokasi Anda" name="keywords">
+    <meta property="og:title" content="WinMax Bali">
+    <meta property="og:description" content="WinMax Bali : Solusi IT.">
+    <meta property="og:image" content="{{ asset('assets/images/ogfoto.png') }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
 @endsection
 
 @section('content')

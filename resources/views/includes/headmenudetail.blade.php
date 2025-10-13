@@ -15,7 +15,7 @@
                 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/blog">Blog</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/blog/all">Blog</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">About Us</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/service">Services</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/projects">Projects</a>
@@ -33,7 +33,7 @@
     <div class="breadcrumbs-custom-inner">
         <div class="container breadcrumbs-custom-container">
         <div class="breadcrumbs-custom-main">
-            <h6 class="breadcrumbs-custom-subtitle title-decorated">Project Detail</h6>
+            <h6 class="breadcrumbs-custom-subtitle title-decorated">{{ $judul }}</h6>
         </div>
         <ul class="breadcrumbs-custom-path">
             <li><a href="index.html">Home</a></li>

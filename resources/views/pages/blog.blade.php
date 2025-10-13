@@ -2,11 +2,11 @@
 
 
 @section('meta')
-    <title>WinMax Bali</title>
-    <meta content="Duaraka mep cunstructions service" name="description">
-    <meta content="Industrial MEP services, Best MEP contractors for hotels, HVAC installation and maintenance" name="keywords">
-    <meta property="og:title" content="Dua Raka">
-    <meta property="og:description" content="WinMax Bali">
+    <title>WinMax Bali - Latest Blog Post</title>
+    <meta content="WinMax Bali: Solusi komputer dan IT untuk rumah dan bisnis. Produk berkualitas, layanan cepat, dan dukungan teknis terpercaya di Bali" name="description">
+    <meta content="Butuh teknisi komputer, jaringan, atau CCTV? Kami hadir dengan layanan service IT lengkap untuk rumah dan bisnis, langsung ke lokasi Anda" name="keywords">
+    <meta property="og:title" content="WinMax Bali">
+    <meta property="og:description" content="WinMax Bali : Solusi IT.">
     <meta property="og:image" content="{{ asset('assets/images/ogfoto.png') }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
@@ -17,7 +17,7 @@
 <!-- Latest Blog Posts-->
 <section class="section section-lg bg-gray-100 text-center">
   <div class="container">
-    <h3 class="section-title wow-outer"><span class="wow slideInDown">Blog</span></h3>
+    <h3 class="section-title wow-outer"><span class="wow slideInDown">Latest Blog Post</span></h3>
     <div class="row row-50">
 
       @foreach($blogs as $blog)

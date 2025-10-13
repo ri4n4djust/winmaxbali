@@ -66,13 +66,13 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/', [App\Http\Controllers\webController::class , 'home'])->name('home');
-Route::get('/blog', [App\Http\Controllers\webController::class , 'blog'])->name('blog');
+Route::get('/blog/{slug}', [App\Http\Controllers\webController::class , 'blog'])->name('blog');
 Route::get('/blog-detail/{slug}', [App\Http\Controllers\webController::class , 'blogDetail'])->name('blog.detail');
 
 Route::get('/admin-slide', [App\Http\Controllers\galleryController::class , 'dataDasboard'])->name('admin.dataDasboard');
 
 Route::get('/gallery', [App\Http\Controllers\webController::class , 'gallery']);
-Route::get('/service', [App\Http\Controllers\webController::class , 'services']);
+Route::get('/service', [App\Http\Controllers\webController::class , 'services'])->name('service');
 
 Route::get('/project-detail', [App\Http\Controllers\projectController::class , 'projectDetail']);
 Route::get('/about-us', [App\Http\Controllers\webController::class , 'aboutUs'])->name('about-us');

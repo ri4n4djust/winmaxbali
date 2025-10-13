@@ -21,23 +21,35 @@ class webController extends Controller
         return view('pages.home', compact('promos', 'albums', 'galeries', 'slides'));
     }
 
-    public function blog(){
+    public function blog($slug){
 
         // var_dump($kamar[0]->foto);
         $promos = Promo::where('status', '1')->get();
         $albums = DB::table('albums')->get();
-        $blogs = DB::table('blogs')->get();
+        if($slug == 'all'){
+            $blogs = DB::table('blogs')->orderBy('id', 'desc')->get();
+        } else {
+            $blogtype = DB::table('blogtypes')->where('slug', $slug)->first();
+            if($blogtype){
+                $blogs = DB::table('blogs')->where('type', $blogtype->id)->orderBy('id', 'desc')->get();
+            } else {
+                $blogs = [];
+            }
+        }
+        // $blogs = DB::table('blogs')->orderBy('id', 'desc')->get();
+
         $blogtypes = DB::table('blogtypes')->get();
         return view('pages.blog', compact('promos', 'albums', 'blogs', 'blogtypes'));
     }
     public function blogDetail($slug){
         // $slug = $request->query('slug');
         // var_dump($kamar[0]->foto);
-        $promos = Promo::where('status', '1')->get();
+
+        $categories = DB::table('blogtypes')->get();
         $albums = DB::table('albums')->get();
-        $galeries = DB::table('galeri')->get();
+        $popularPosts = DB::table('blogs')->get();
         $blogDetail = DB::table('blogs')->where('slug', $slug)->get();
-        return view('pages.blog-detail', compact('promos', 'albums', 'galeries', 'blogDetail'));
+        return view('pages.blog-detail', compact('categories', 'albums', 'popularPosts', 'blogDetail'));
     }
     
     public function oneBedroom(){

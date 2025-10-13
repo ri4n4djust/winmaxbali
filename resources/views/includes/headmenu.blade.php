@@ -22,7 +22,7 @@
                 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/blog">Blog</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/blog/all">Blog</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">About Us</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/service">Services</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/projects">Projects</a>
@@ -45,7 +45,7 @@
             <div class="col-md-6 col-lg-5 col-xl-4">
             </div>
             <div class="col-md-8 col-lg-7 col-xl-6">
-            <h1 class="wow-outer"><span class="font-weight-bold wow-outer"><span class="wow slideInUp">WinMax Bali.id</span></span><span class="font-weight-exlight wow-outer"><span class="wow slideInUp" data-wow-delay=".1s"></span></span></h1>
+            <h1 class="wow-outer"><span class="font-weight-bold wow-outer"><span class="wow slideInUp">WinMaxBali.id</span></span><span class="font-weight-exlight wow-outer"><span class="wow slideInUp" data-wow-delay=".1s"></span></span></h1>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-4 col-offset-1">
             <div class="wow-outer">

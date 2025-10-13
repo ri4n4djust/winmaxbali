@@ -29,15 +29,15 @@
     @if (Route::is('home'))
       @include('includes.headmenu')
     @elseif (Route::is('blog') || Route::is('blog.detail'))
-      @include('includes.headmenudetail', ['banner' => '1.webp' ?? null])
+      @include('includes.headmenudetail', ['banner' => '1.webp' ?? null, 'judul' => 'Blog' ?? null])
     @elseif (Route::is('about-us'))
-      @include('includes.headmenudetail', ['banner' => '2.webp' ?? null])
+      @include('includes.headmenudetail', ['banner' => '2.webp' ?? null, 'judul' => 'About Us' ?? null])
     @elseif (Route::is('service'))
-      @include('includes.headmenudetail', ['banner' => '3.webp' ?? null])
+      @include('includes.headmenudetail', ['banner' => '3.webp' ?? null, 'judul' => 'Our Services' ?? null])
     @elseif (Route::is('projects'))
-      @include('includes.headmenudetail', ['banner' => '4.webp' ?? null])
+      @include('includes.headmenudetail', ['banner' => '4.webp' ?? null, 'judul' => 'Our Projects' ?? null])
     @elseif (Route::is('contact'))
-      @include('includes.headmenudetail', ['banner' => '5.webp' ?? null])
+      @include('includes.headmenudetail', ['banner' => '5.webp' ?? null, 'judul' => 'Contact us' ?? null])
     @endif 
 
     <main id="content">

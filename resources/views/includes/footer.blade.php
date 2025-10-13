@@ -13,9 +13,9 @@
             <div class="box-1">
                 <h4>Contact Information</h4>
                 <ul class="list-sm">
-                <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">2130 Fulton Street <br> San Diego, CA 94117-1080 USA</a></li>
-                <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span><a class="link-default" href="tel:#">1-800-1234-678</a></li>
-                <li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#">info@demolink.org</a></li>
+                <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">Jl. Jepun Bali No.10x, Lukluk, Kec. Mengwi, <br>Kabupaten Badung, Bali 80351</a></li>
+                <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span><a class="link-default" href="tel:#">+62 81868 8114</a></li>
+                <li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:info@winmaxbali.id">info@winmaxbali.id</a></li>
                 </ul>
             </div>
             </div>

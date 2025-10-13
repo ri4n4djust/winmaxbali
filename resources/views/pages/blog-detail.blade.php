@@ -6,17 +6,6 @@
 @endsection
 @section('content')
     
-    <!-- ======= Breadcrumbs ======= -->
-    <!-- <div class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>{{ $blogDetail[0]->title }}</h2>
-        </div>
-
-      </div>
-    </div> -->
-    <!-- End Breadcrumbs -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -27,7 +16,7 @@
             <!-- <p>Learn More </p> -->
             </div>
 
-            <div class="row gy-4">
+            <div class="row row-30">
                 <div class="col-lg-12 position-relative about-img" style="border:1px solid #ddd; padding:10px;" data-aos="fade-up" data-aos-delay="150">
                     <!-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> -->
                     <hr>
@@ -36,8 +25,8 @@
                 </div>
             </div>
 
-            <div class="row gy-4">
-                <div class="col-lg-8 position-relative about-img" data-aos="fade-up" data-aos-delay="150">
+            <div class="row row-30">
+                <div class="col-lg-8" >
                     
                     <div class="position-relative mt-4">
                         
@@ -261,27 +250,47 @@
                     </div>
                     <!-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> -->
                 </div>
-                <div class="col-lg-3 position-relative" data-aos="fade-up" data-aos-delay="300">
-                
-                    <div class="content mt-4" >
+
+                <div class="col-lg-3 ">
+                    <div class="progress-linear-outer wow-outer">
+                        <div class="sidebar-section">
+                            <h4 class="text-lg font-semibold mb-4">📂 Kategori</h4>
+                            <ul class="space-y-2">
+                                @foreach($categories as $category)
+                                    <li>
+                                        <a href="{{ route('blog', $category->slug) }}" class="text-blue-600 hover:underline">
+                                            {{ $category->slug }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
                         
+                    </div>
 
-                
-                        <div class="row">
-                            <div class="section-header">
-                                <h4>Most interesting In Bali</h4>
-                            </div>
-                            
+                    <div class="progress-linear-outer wow-outer">
+                        <div class="section-header">
+                            <h4>Iklan</h4>
                         </div>
-
-                        <div class="row">
-                            <div class="section-header">
-                                <h4>Bali Activities</h4>
-                            </div>
-                            
+                        
+                    </div>
+                    <div class="progress-linear-outer wow-outer">
+                        <div class="sidebar-section">
+                            <h4 class="text-lg font-semibold mb-4">🔥 Popular Posts</h4>
+                            <ul class="space-y-3">
+                                @foreach($popularPosts as $post)
+                                    <li>
+                                        <a href="{{ route('blog.detail', $post->slug) }}" class="text-blue-600 hover:underline">
+                                            {{ $post->title }}
+                                        </a>
+                                        <div class="text-sm text-gray-500">
+                                            {{ $post->type }} views
+                                        </div>
+                                    </li>
+                                @endforeach
+                            </ul>
                         </div>
-                                        
-                    
+                    </div>
                 </div>
             </div>
             
