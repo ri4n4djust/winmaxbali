@@ -1,9 +1,14 @@
 @extends('layouts.default')
 
 @section('meta')
-    <title>Duaraka - Project Detail</title>
-    <meta content="best mep contruction in bali" name="description">
-    <meta content="bali mep contruction, mechanical, electrical, plumbing bali" name="keywords">
+    <title>WinMax Bali - Our Project</title>
+    <meta content="WinMax Bali: Solusi komputer dan IT untuk rumah dan bisnis. Produk berkualitas, layanan cepat, dan dukungan teknis terpercaya di Bali" name="description">
+    <meta content="Butuh teknisi komputer, jaringan, atau CCTV? Kami hadir dengan layanan service IT lengkap untuk rumah dan bisnis, langsung ke lokasi Anda" name="keywords">
+    <meta property="og:title" content="WinMax Bali">
+    <meta property="og:description" content="WinMax Bali : Solusi IT.">
+    <meta property="og:image" content="{{ asset('assets/images/ogfoto.png') }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
 @endsection
 
 
@@ -18,6 +23,7 @@
                         <h5>Phase 1: Research</h5>
                         <p><strong>Date:</strong> 01 May 2025</p>
                         <p>Gather information and data.</p>
+                        <img src="https://via.placeholder.com/150" alt="Research Image" style="width:100%; margin-top:10px;">
                     </div>
                 </div>
                 <div class="timeline-event right">

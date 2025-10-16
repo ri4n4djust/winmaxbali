@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\DB;
 class projectController extends Controller
 {
     //
+    public function projects(){
+
+        // var_dump($kamar[0]->foto);
+        return view('pages.project');
+    }
     public function projectDetail(){
 
         // var_dump($kamar[0]->foto);

@@ -13,96 +13,43 @@
 
 @section('content')
 
-<section class="bg-white py-16">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">💻 Layanan IT Kami</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            @foreach($services as $service)
-                <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
-                    <div class="text-4xl text-blue-500 mb-4">
-                        <img src="{{ asset('storage/service/'.$service->image) }}" alt="{{ $blog->title ?? 'Blog image' }}" width="370" height="264"/>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">{{ $service->title }}</h3>
-                    <p class="text-gray-600 text-sm">{!! $service->content !!}</p>
-                    <a href="#" class="mt-4 inline-block text-sm text-blue-600 hover:underline">
-                        Lihat Detail →
-                    </a>
-                </div>
-            @endforeach
-        </div>
-    </div>
-</section>
+
 <section class="section section-lg bg-default">
   <div class="container">
     <div class="row row-50">
       <div class="col-12 text-center">
         <h3 class="section-title wow-outer"><span class="wow slideInUp">💻 Layanan IT Kami</span></h3>
       </div>
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                @foreach($services as $service)
+                    <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+                      
+                        <h3 class="text-xl font-semibold text-gray-700 mb-2">{{ $service->title }}</h3>
+                        <p class="text-gray-600 text-sm">{!! $service->content !!}</p>
+                        <a href="#" class="mt-4 inline-block text-sm text-blue-600 hover:underline">
+                            Lihat Detail →
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+        </div>
       
       <div class="col-12 isotope-wrap">
         <div class="isotope offset-top-2" data-isotope-layout="masonry" data-lightgallery="group" data-lg-thumbnail="false">
           <div class="row row-30">
-            
+            @foreach($services as $service)
             <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
                 <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-1-370x256.jpg')}}" alt="" width="370" height="256"/>
+                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{ asset('storage/service/'.$service->image) }}" alt="{{ $blog->title ?? 'Blog image' }}" width="370" height="264"/>
                   <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="/project-detail">Project 1</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-1.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                    <p class="thumbnail-corporate-title"><a href="#">{{ $service->title }}</a></p>
+                    <p>{!! $service->content !!}</p><a class="thumbnail-corporate-link" href="{{ asset('storage/service/'.$service->image) }}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
                   </div>
                   <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-2-370x464.jpg')}}" alt="" width="370" height="464"/>
-                  <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 2</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-2.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                  </div>
-                  <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-3-370x256.jpg')}}" alt="" width="370" height="256"/>
-                  <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 3</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-3.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                  </div>
-                  <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-4-370x464.jpg')}}" alt="" width="370" height="464"/>
-                  <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 4</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-4.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                  </div>
-                  <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-6-370x464.jpg')}}" alt="" width="370" height="464"/>
-                  <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 5</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-6.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                  </div>
-                  <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-5-370x256.jpg')}}" alt="" width="370" height="256"/>
-                  <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 6</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-5.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                  </div>
-                  <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
+                </article>    
+              </div>
+            @endforeach
           </div>
         </div>
       </div>
@@ -364,13 +311,13 @@ function initStarRatings(root=document){
 
 
 <!--maps-->
-<section id="maps" class="scrollto clearfix">
+<!-- <section id="maps" class="scrollto clearfix">
   <div class="row-maps clearfix">
 
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15779.000096976235!2d115.1756207!3d-8.6199808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91058e289e7ebc3!2sWinMax%20Computer!5e0!3m2!1sen!2sid!4v1629275614666!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   </div>
-</section>
+</section> -->
 <!--End of maps-->
    
 

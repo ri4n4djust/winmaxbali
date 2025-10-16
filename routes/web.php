@@ -80,7 +80,8 @@ Route::get('/admin-slide', [App\Http\Controllers\galleryController::class , 'dat
 Route::get('/gallery', [App\Http\Controllers\webController::class , 'gallery']);
 Route::get('/service', [App\Http\Controllers\webController::class , 'services'])->name('service');
 
-Route::get('/project-detail', [App\Http\Controllers\projectController::class , 'projectDetail']);
+Route::get('/projects', [App\Http\Controllers\projectController::class , 'projects'])->name('projects');
+Route::get('/project-detail', [App\Http\Controllers\projectController::class , 'projectDetail'])->name('project-detail');
 Route::get('/about-us', [App\Http\Controllers\webController::class , 'aboutUs'])->name('about-us');
 
 Route::get('/sitemap', function(){

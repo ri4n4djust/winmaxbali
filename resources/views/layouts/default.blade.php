@@ -36,6 +36,8 @@
       @include('includes.headmenudetail', ['banner' => '3.webp' ?? null, 'judul' => 'Our Services' ?? null])
     @elseif (Route::is('projects'))
       @include('includes.headmenudetail', ['banner' => '4.webp' ?? null, 'judul' => 'Our Projects' ?? null])
+    @elseif (Route::is('project-detail'))
+      @include('includes.headmenudetail', ['banner' => '4.webp' ?? null, 'judul' => 'Project Detail' ?? null])
     @elseif (Route::is('contact'))
       @include('includes.headmenudetail', ['banner' => '5.webp' ?? null, 'judul' => 'Contact us' ?? null])
     @endif 
