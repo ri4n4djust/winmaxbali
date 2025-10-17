@@ -266,42 +266,32 @@
     <div class="row row-30 justify-content-center align-items-center offset-top-2 wow-outer">
       <div class="col-6 col-sm-4 col-md-2 text-center">
         <figure class="mb-0">
-          <img src="{{ asset('storage/client/logo.png') }}" alt="Client 1" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+          <img src="{{ asset('storage/client/awan.webp') }}" alt="Client 1" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
         </figure>
       </div>
       <div class="col-6 col-sm-4 col-md-2 text-center">
         <figure class="mb-0">
-          <img src="{{ asset('assets/images/clients/client-2.png') }}" alt="Client 2" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+          <img src="{{ asset('storage/client/amalfi.webp') }}" alt="Client 2" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
         </figure>
       </div>
       <div class="col-6 col-sm-4 col-md-2 text-center">
         <figure class="mb-0">
-          <img src="{{ asset('assets/images/clients/client-3.png') }}" alt="Client 3" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+          <img src="{{ asset('storage/client/aria.webp') }}" alt="Client 3" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
         </figure>
       </div>
       <div class="col-6 col-sm-4 col-md-2 text-center">
         <figure class="mb-0">
-          <img src="{{ asset('assets/images/clients/client-4.png') }}" alt="Client 4" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+          <img src="{{ asset('storage/client/wkn.webp') }}" alt="Client 4" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
         </figure>
       </div>
       <div class="col-6 col-sm-4 col-md-2 text-center">
         <figure class="mb-0">
-          <img src="{{ asset('assets/images/clients/client-5.png') }}" alt="Client 5" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+          <img src="{{ asset('storage/client/asa bali.webp') }}" alt="Client 5" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
         </figure>
       </div>
       <div class="col-6 col-sm-4 col-md-2 text-center">
         <figure class="mb-0">
-          <img src="{{ asset('assets/images/clients/client-6.png') }}" alt="Client 6" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
-        </figure>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <figure class="mb-0">
-          <img src="{{ asset('assets/images/clients/client-5.png') }}" alt="Client 5" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
-        </figure>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2 text-center">
-        <figure class="mb-0">
-          <img src="{{ asset('assets/images/clients/client-6.png') }}" alt="Client 6" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
+          <img src="{{ asset('storage/client/awandari.webp') }}" alt="Client 6" class="img-fluid" style="max-height:64px; filter:grayscale(60%); transition:filter .3s;">
         </figure>
       </div>
     </div>
@@ -314,10 +304,10 @@
             <div class="carousel-item active">
               <div class="card border-0 shadow-sm p-4">
                 <div class="d-flex align-items-start">
-                  <img src="{{ asset('assets/images/clients/client-1.png') }}" alt="Client 1" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
+                  <img src="{{ asset('storage/client/awandari.webp') }}" alt="Client 1" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
                   <div class="text-left">
                     <p class="mb-2" style="font-style:italic;">"Layanan cepat dan teknisi sangat berpengalaman. Semua masalah jaringan kantor kami tuntas dalam satu hari."</p>
-                    <div class="small text-muted">- Putu Santosa, Owner @ BaliFoods</div>
+                    <!-- <div class="small text-muted">- Putu Santosa, Owner @ BaliFoods</div> -->
                   </div>
                 </div>
               </div>
@@ -326,10 +316,10 @@
             <div class="carousel-item">
               <div class="card border-0 shadow-sm p-4">
                 <div class="d-flex align-items-start">
-                  <img src="{{ asset('assets/images/clients/client-2.png') }}" alt="Client 2" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
+                  <img src="{{ asset('storage/client/asa bali.webp') }}" alt="Client 2" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
                   <div class="text-left">
                     <p class="mb-2" style="font-style:italic;">"Pasang CCTV cepat, rapi kabelnya, dan penjelasan sangat jelas. Sangat direkomendasikan."</p>
-                    <div class="small text-muted">- Nyoman Arya, Manager @ VillaMimpi</div>
+                    <!-- <div class="small text-muted">- Nyoman Arya, Manager @ VillaMimpi</div> -->
                   </div>
                 </div>
               </div>
@@ -338,10 +328,10 @@
             <div class="carousel-item">
               <div class="card border-0 shadow-sm p-4">
                 <div class="d-flex align-items-start">
-                  <img src="{{ asset('assets/images/clients/client-3.png') }}" alt="Client 3" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
+                  <img src="{{ asset('storage/client/awan.webp') }}" alt="Client 3" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
                   <div class="text-left">
                     <p class="mb-2" style="font-style:italic;">"Buat website company profile kami sangat profesional, komunikasi jelas dan after-sales bagus."</p>
-                    <div class="small text-muted">- Made Putri, Director @ SurfBali Co.</div>
+                    <!-- <div class="small text-muted">- Made Putri, Director @ SurfBali Co.</div> -->
                   </div>
                 </div>
               </div>

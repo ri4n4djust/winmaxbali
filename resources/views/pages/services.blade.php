@@ -44,7 +44,7 @@
                 <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{ asset('storage/service/'.$service->image) }}" alt="{{ $blog->title ?? 'Blog image' }}" width="370" height="264"/>
                   <div class="thumbnail-corporate-caption">
                     <p class="thumbnail-corporate-title"><a href="#">{{ $service->title }}</a></p>
-                    <p>{!! $service->content !!}</p><a class="thumbnail-corporate-link" href="{{ asset('storage/service/'.$service->image) }}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                    <a class="thumbnail-corporate-link" href="{{ asset('storage/service/'.$service->image) }}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
                   </div>
                   <div class="thumbnail-corporate-dummy"></div>
                 </article>    

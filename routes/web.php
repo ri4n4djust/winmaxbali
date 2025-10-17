@@ -83,6 +83,7 @@ Route::get('/service', [App\Http\Controllers\webController::class , 'services'])
 Route::get('/projects', [App\Http\Controllers\projectController::class , 'projects'])->name('projects');
 Route::get('/project-detail', [App\Http\Controllers\projectController::class , 'projectDetail'])->name('project-detail');
 Route::get('/about-us', [App\Http\Controllers\webController::class , 'aboutUs'])->name('about-us');
+Route::get('/contact', [App\Http\Controllers\webController::class , 'contact'])->name('contact');
 
 Route::get('/sitemap', function(){
     $sitemap = Sitemap::create()

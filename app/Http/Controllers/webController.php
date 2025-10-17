@@ -83,7 +83,12 @@ class webController extends Controller
         $pages = Page::where('slug', 'about-us')->first();
         return view('pages.about-us', compact('pages'));
     }
+    public function contact(){
 
+        // var_dump($kamar[0]->foto);
+        $pages = Page::where('slug', 'contact')->first();
+        return view('pages.contact', compact('pages'));
+    }
     
 
 }

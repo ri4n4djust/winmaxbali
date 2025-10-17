@@ -153,7 +153,6 @@ class DropzoneController extends Controller
             Service::updateOrCreate(
                 ['id' => $idal],
                 [
-                    'id' => $idal,
                     'image' => $finalImage,
                     'title' => $request->title,
                     'slug' => $request->slug,
