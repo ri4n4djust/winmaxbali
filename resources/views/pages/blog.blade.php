@@ -19,13 +19,81 @@
   <div class="container">
     <h3 class="section-title wow-outer"><span class="wow slideInDown">Latest Blog Post</span></h3>
     <div class="row row-30">
-        <div class="col-lg-12 position-relative about-img" style="border:1px solid #ddd; padding:10px;" data-aos="fade-up" data-aos-delay="150">
-            <!-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> -->
-            <form action="{{ route('blog', 'cari') }}" method="GET" class="d-flex" role="search">
-              <input type="text" name="query" class="form-control me-2" placeholder="Cari sesuatu..." required>
-              <button type="submit" class="btn btn-primary">Cari</button>
-            </form>
+      <form action="{{ route('blog', 'cari') }}" method="GET" class="search-form">
+        <div class="input-group">
+          <input type="text" name="query" placeholder="Cari sesuatu..." value="{{ request('query') }}" required>
+          <button type="submit">🔍 Cari</button>
+          <a href="{{ route('blog', 'all') }}" class="reset-btn">⟲ Reset</a>
         </div>
+      </form>
+
+      <style>
+      .search-form {
+        width: 100%;
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 15px;
+        background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .input-group {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      .input-group input[type="text"] {
+        flex: 1;
+        padding: 12px 16px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        min-width: 0;
+      }
+
+      .input-group button,
+      .input-group .reset-btn {
+        padding: 12px 16px;
+        font-size: 16px;
+        border-radius: 8px;
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      .input-group button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .input-group .reset-btn {
+        background-color: #6c757d;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .input-group .reset-btn:hover {
+        background-color: #5a6268;
+      }
+
+      /* Responsive behavior */
+      @media (max-width: 480px) {
+        .input-group {
+          flex-direction: column;
+        }
+
+        .input-group input,
+        .input-group button,
+        .input-group .reset-btn {
+          width: 100%;
+        }
+      }
+      </style>
+      
     </div>
     <div class="row row-50">
       
