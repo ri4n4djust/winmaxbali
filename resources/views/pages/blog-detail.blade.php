@@ -229,7 +229,10 @@
                                         @endif
 
                                         <span class="ms-2 anchor-permalink" style="font-size:.95rem;">
-                                            <a href="#{{ $slice['id'] }}" class="text-decoration-none text-muted" aria-label="Permalink to this section" title="Permalink to this section">#</a>
+                                            <!-- <a href="#{{ $slice['id'] }}" class="text-decoration-none text-muted" aria-label="Permalink to this section" title="Permalink to this section">
+                                                iklan
+                                            </a> -->
+                                            iklan
                                         </span>
                                     </article>
                                 @endforeach

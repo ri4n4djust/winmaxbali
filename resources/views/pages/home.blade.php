@@ -15,9 +15,9 @@
 <!-- Advantages and Achievements-->
 <section class="section section-lg text-center bg-default">
   <div class="container">
-    <h3 class="section-title wow-outer"><span class="wow slideInUp">About Us</span></h3>
-    <p class="wow-outer"><span class="text-width-1 wow slideInDown">Berdiri sejak Tahun 2014 kami terus berkomitmen untuk mejadi vendor dan partner yang terbaik bagi client kami
-      Setelah melewati masa ke masa, perubahan terus terjadi didunia teknologi dan sistem informasi, kami WinMaxBali terus berinovasi dan mengiringi kemajuan teknoligi tersebut dengan mengedepankan service kepada client membuat kami bertahan dan berkembang sampai saat ini.</span>
+    <h3 class="section-title wow-outer"><span class="wow slideInUp">Tentang Kami</span></h3>
+    <p class="wow-outer"><span class="text-width-1 wow slideInDown">Berdiri sejak Tahun 2014 kami terus berkomitmen untuk mejadi vendor dan partner yang terbaik bagi client kami.</p>
+    <p>  Setelah melewati masa ke masa, perubahan terus terjadi didunia teknologi dan sistem informasi, kami WinMaxBali terus berinovasi dan mengiringi kemajuan teknoligi tersebut dengan mengedepankan service kepada client membuat kami bertahan dan berkembang sampai saat ini.</span>
     </p>
     <div class="row row-50">
       <div class="col-6 col-md-3 wow-outer">
@@ -27,7 +27,7 @@
           <div class="counter-minimal-main">
             <div class="counter">365</div>
           </div>
-          <h5 class="counter-minimal-title">Finish Project</h5>
+          <h5 class="counter-minimal-title">Proyek selesai</h5>
         </article>
       </div>
       <div class="col-6 col-md-3 wow-outer">
@@ -37,7 +37,7 @@
           <div class="counter-minimal-main">
             <div class="counter">4</div>
           </div>
-          <h5 class="counter-minimal-title">Ongoing Projects</h5>
+          <h5 class="counter-minimal-title">Proyek berlangsung</h5>
         </article>
       </div>
       <div class="col-6 col-md-3 wow-outer">
@@ -47,7 +47,7 @@
           <div class="counter-minimal-main">
             <div class="counter">10</div>
           </div>
-          <h5 class="counter-minimal-title">Years of Experience</h5>
+          <h5 class="counter-minimal-title">Pengalaman</h5>
         </article>
       </div>
       <div class="col-6 col-md-3 wow-outer">

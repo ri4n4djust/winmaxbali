@@ -30,7 +30,12 @@
                     <div class="row row-30">
                         <div class="col-lg-6">
                             <p>Kontak kami melalui tlp : +6281 8688114 </p>
-                            <p>Melalui WA : </p>
+                            <p>Melalui WA : 
+                                <a href="https://wa.me/62818688114?text=Halo%20saya%20tertarik%20dengan%20layanan%20Anda" target="_blank" style="display:inline-flex;align-items:center;padding:10px 15px;background-color:#25D366;color:white;border-radius:5px;text-decoration:none;font-family:sans-serif;font-size:16px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:24px;height:24px;margin-right:10px;">
+  Chat via WhatsApp
+</a>
+                            </p>
                         </div>
                         <div class="col-lg-6">
                             <from action="" method="post">

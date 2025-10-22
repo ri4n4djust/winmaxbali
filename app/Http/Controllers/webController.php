@@ -22,13 +22,17 @@ class webController extends Controller
         return view('pages.home', compact('promos', 'albums', 'galeries', 'slides'));
     }
 
-    public function blog($slug){
+    public function blog(Request $request, $slug){
 
         // var_dump($kamar[0]->foto);
         $promos = Promo::where('status', '1')->get();
         $albums = DB::table('albums')->get();
+        $search = $request->query('query');
         if($slug == 'all'){
             $blogs = DB::table('blogs')->orderBy('id', 'desc')->get();
+        }elseif($search != null){
+            $search = $request->query('query');
+            $blogs = DB::table('blogs')->where('slug', 'like', '%' . $search . '%')->get();
         } else {
             $blogtype = DB::table('blogtypes')->where('slug', $slug)->first();
             if($blogtype){

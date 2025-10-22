@@ -14,12 +14,12 @@
                 <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
                 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/">Beranda</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/blog/all">Blog</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/service">Services</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/projects">Projects</a>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">About Us</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/contact">Contacts</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/service">Layanan</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/projects">Proyek</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">Tentang Kami</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/contact">Kontak</a></li>
                 </ul>
                 </div>
             </div>

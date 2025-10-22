@@ -18,7 +18,17 @@
 <section class="section section-lg bg-gray-100 text-center">
   <div class="container">
     <h3 class="section-title wow-outer"><span class="wow slideInDown">Latest Blog Post</span></h3>
+    <div class="row row-30">
+        <div class="col-lg-12 position-relative about-img" style="border:1px solid #ddd; padding:10px;" data-aos="fade-up" data-aos-delay="150">
+            <!-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> -->
+            <form action="{{ route('blog', 'cari') }}" method="GET" class="d-flex" role="search">
+              <input type="text" name="query" class="form-control me-2" placeholder="Cari sesuatu..." required>
+              <button type="submit" class="btn btn-primary">Cari</button>
+            </form>
+        </div>
+    </div>
     <div class="row row-50">
+      
 
       @foreach($blogs as $blog)
         <div class="col-sm-4 col-lg-3 wow-outer">
