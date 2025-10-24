@@ -108,7 +108,7 @@
                   ->filter()
                   ->first() ?: 'assets/images/sidebar-blog-1-370x264.jpg';
               @endphp
-              <img src="{{ Storage::url('blog/'.$firstImage) }}" alt="{{ $blog->title ?? 'Blog image' }}" width="370" height="264"/>
+              <img src="{{ asset('storage/blog/'.$firstImage) }}" alt="{{ $blog->title ?? 'Blog image' }}" width="370" height="264"/>
             </a>
             <ul class="post-classic-meta">
               <li><a class="button-winona {{ $blog->category_class ?? '' }}" href="#">
