@@ -101,7 +101,7 @@ class DropzoneController extends Controller
             $fileName = $idal . '_' . $fileName1;
 
             // Store the uploaded file
-            chmod($request->file->storeAs('/blog/', $fileName, 'public'), 0775);
+            $request->file->storeAs('/blog/', $fileName, 'public');
 
             // Prepare final image value
             $finalImage = ($old && !empty($old->image) && $old->image !== '-') ? $old->image . ',' . $fileName : $fileName;
