@@ -25,3 +25,13 @@
   } 
 html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXC8S5JFG2">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XXC8S5JFG2');
+</script>

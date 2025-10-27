@@ -21,12 +21,12 @@
                 <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
                 <!-- RD Navbar Nav-->
                 <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/">Beranda</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/blog/all">Blog</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/service">Layanan</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/projects">Proyek</a>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">Tentang Kami</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/contact">Kontak</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/">HOME</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/blog/all">BLOG</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/service">SERVICES</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/projects">PROJECTS</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">ABOUT US</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/contact">CONTACT</a></li>
                 </ul>
                 </div>
                 <!-- RD Navbar Search-->

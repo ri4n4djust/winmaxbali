@@ -213,7 +213,7 @@
                 <!-- Thumbnail Corporate-->
                 <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-1-370x256.jpg')}}" alt="" width="370" height="256"/>
                   <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="/project-detail">Project 1</a></p>
+                    <p class="thumbnail-corporate-title"><a href="/project-detail">Penarikan kabel jaringan</a></p>
                     <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-1.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
                   </div>
                   <div class="thumbnail-corporate-dummy"></div>
@@ -223,7 +223,7 @@
                 <!-- Thumbnail Corporate-->
                 <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-2-370x464.jpg')}}" alt="" width="370" height="464"/>
                   <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 2</a></p>
+                    <p class="thumbnail-corporate-title"><a href="#">Pemasangan kamera cctv</a></p>
                     <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-2.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
                   </div>
                   <div class="thumbnail-corporate-dummy"></div>
@@ -233,18 +233,8 @@
                 <!-- Thumbnail Corporate-->
                 <article class="thumbnail-corporate wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-3-370x256.jpg')}}" alt="" width="370" height="256"/>
                   <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 3</a></p>
+                    <p class="thumbnail-corporate-title"><a href="#">Maintenance PC Office</a></p>
                     <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-3.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                  </div>
-                  <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-4-370x464.jpg')}}" alt="" width="370" height="464"/>
-                  <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 4</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-4.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
                   </div>
                   <div class="thumbnail-corporate-dummy"></div>
                 </article>
@@ -304,7 +294,7 @@
             <div class="carousel-item active">
               <div class="card border-0 shadow-sm p-4">
                 <div class="d-flex align-items-start">
-                  <img src="{{ asset('storage/client/awandari.webp') }}" alt="Client 1" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
+                  <!-- <img src="{{ asset('storage/client/awandari.webp') }}" alt="Client 1" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;"> -->
                   <div class="text-left">
                     <p class="mb-2" style="font-style:italic;">"Layanan cepat dan teknisi sangat berpengalaman. Semua masalah jaringan kantor kami tuntas dalam satu hari."</p>
                     <!-- <div class="small text-muted">- Putu Santosa, Owner @ BaliFoods</div> -->
@@ -316,7 +306,7 @@
             <div class="carousel-item">
               <div class="card border-0 shadow-sm p-4">
                 <div class="d-flex align-items-start">
-                  <img src="{{ asset('storage/client/asa bali.webp') }}" alt="Client 2" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
+                  <!-- <img src="{{ asset('storage/client/asa bali.webp') }}" alt="Client 2" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;"> -->
                   <div class="text-left">
                     <p class="mb-2" style="font-style:italic;">"Pasang CCTV cepat, rapi kabelnya, dan penjelasan sangat jelas. Sangat direkomendasikan."</p>
                     <!-- <div class="small text-muted">- Nyoman Arya, Manager @ VillaMimpi</div> -->
@@ -328,7 +318,7 @@
             <div class="carousel-item">
               <div class="card border-0 shadow-sm p-4">
                 <div class="d-flex align-items-start">
-                  <img src="{{ asset('storage/client/awan.webp') }}" alt="Client 3" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;">
+                  <!-- <img src="{{ asset('storage/client/awan.webp') }}" alt="Client 3" class="rounded mr-3" style="width:56px;height:56px;object-fit:cover;"> -->
                   <div class="text-left">
                     <p class="mb-2" style="font-style:italic;">"Buat website company profile kami sangat profesional, komunikasi jelas dan after-sales bagus."</p>
                     <!-- <div class="small text-muted">- Made Putri, Director @ SurfBali Co.</div> -->
