@@ -274,14 +274,7 @@ class DropzoneController extends Controller
             // $image_path = "/storage/blog/". $fileName;
             $fullPath = public_path('storage/blog/' . $fileName);
             if (file_exists($fullPath)) {
-                if (is_writable($file)) {
-                    echo "File is writable\n";
-
-                    unlink($fullPath);
-                } else {
-                    echo "File is not writable\n";
-                }
-
+                unlink($fullPath);
             }
             return response()->json(['success' => true, 'message' => 'File deleted successfully']);
         }
