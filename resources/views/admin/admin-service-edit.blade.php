@@ -104,7 +104,7 @@
                             dictCancelUploadConfirmation: "Are you sure you want to cancel this upload?",
                             dictUploadCanceled: "Upload canceled.",
                             dictUploadAborted: "Upload aborted.",
-                            maxFiles: 1, // Set maximum number of files
+                            maxFiles: 3, // Set maximum number of files
                             url: "/dropzone/store-service", 
                             init: function() {
                                 this.on("sending", function(file, xhr, formData) {
