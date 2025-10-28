@@ -98,23 +98,23 @@
 </style>
 
 <div class="reviews-wrap">
-  <div class="reviews-header">
+  <!-- <div class="reviews-header">
     <div class="reviews-average">
       <div style="display:flex;flex-direction:column;align-items:center">
         <div class="big" id="avg-score">4.6</div>
         <div style="margin-top:6px;">
           <div class="star-rating" data-rating="4.6">
             <div class="star-back" aria-hidden="true">
-              <!-- 5 gray stars -->
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
             </div>
             <div class="star-front" aria-hidden="true" style="width:0%">
-              <!-- 5 gold stars (width will be set via JS) -->
-              <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
+
+            <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
               <svg viewBox="0 0 24 24"><path d="M12 17.3l6.18 3.73-1.64-7.03L21 9.24l-7.19-.62L12 2 10.19 8.62 3 9.24l4.46 4.76L5.82 21z"/></svg>
@@ -127,8 +127,8 @@
     </div>
 
     <div class="reviews-list" style="min-width:360px;">
-      <!-- Example review cards -->
-      <div class="card-review">
+
+    <div class="card-review">
         <div class="avatar">JS</div>
         <div class="review-body">
           <div class="review-meta">
@@ -213,19 +213,19 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="ratings-breakdown" aria-hidden="true">
+  <!-- <div class="ratings-breakdown" aria-hidden="true">
     <div>5★ <strong>78%</strong></div>
     <div>4★ <strong>12%</strong></div>
     <div>3★ <strong>6%</strong></div>
     <div>2★ <strong>2%</strong></div>
     <div>1★ <strong>2%</strong></div>
     <a class="btn-rate" href="#maps">Leave a review</a>
-  </div>
+  </div> -->
 
   <!-- Interactive example: live star input -->
-  <div class="rate-widget" style="margin-top:22px;">
+  <!-- <div class="rate-widget" style="margin-top:22px;">
     <div class="hint">Rate this project:</div>
     <div id="interactive" class="star-rating" data-rating="0" aria-label="Rate">
       <div class="star-back" style="cursor:pointer;">
@@ -244,7 +244,7 @@
       </div>
     </div>
     <div id="rate-value" style="font-weight:700;">0</div>
-  </div>
+  </div> -->
 </div>
 
 <script>
