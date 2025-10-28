@@ -26,40 +26,30 @@
             
             <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
                 <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-1-370x256.jpg')}}" alt="" width="370" height="256"/>
+                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/penarikan-kabel-jaringan.webp')}}" alt="" width="370" height="256"/>
                   <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="/project-detail">Project 1</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-1.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                    <p class="thumbnail-corporate-title"><a href="/project-detail">Penarikan kabel jaringan</a></p>
+                    <p>Penarikan kabel jaringan untuk penambahan akses point .</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/penarikan-kabel-jaringan.webp')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
                   </div>
                   <div class="thumbnail-corporate-dummy"></div>
                 </article>
             </div>
             <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
                 <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-2-370x464.jpg')}}" alt="" width="370" height="464"/>
+                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/pasang-kamera.webp')}}" alt="" width="370" height="464"/>
                   <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 2</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-2.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                    <p class="thumbnail-corporate-title"><a href="#">Pemasangan kamera cctv</a></p>
+                    <p>Pemasangan kamear cctv 16 channel di villa.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/pasang-kamera.webp')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
                   </div>
                   <div class="thumbnail-corporate-dummy"></div>
                 </article>
             </div>
             <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
                 <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-3-370x256.jpg')}}" alt="" width="370" height="256"/>
+                <article class="thumbnail-corporate wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/perbaikan-pc.webp')}}" alt="" width="370" height="256"/>
                   <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 3</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-3.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
-                  </div>
-                  <div class="thumbnail-corporate-dummy"></div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-                <!-- Thumbnail Corporate-->
-                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-4-370x464.jpg')}}" alt="" width="370" height="464"/>
-                  <div class="thumbnail-corporate-caption">
-                    <p class="thumbnail-corporate-title"><a href="#">Project 4</a></p>
-                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-4.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                    <p class="thumbnail-corporate-title"><a href="#">Maintenance PC Office</a></p>
+                    <p>Perawatan 6 unit komputer office .</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/perbaikan-pc.webp')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
                   </div>
                   <div class="thumbnail-corporate-dummy"></div>
                 </article>
