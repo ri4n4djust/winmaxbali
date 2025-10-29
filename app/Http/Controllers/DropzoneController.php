@@ -275,8 +275,8 @@ class DropzoneController extends Controller
             $image = new class {
                 public function update($data) { return true; }
             };
-            // $fullPath = "/storage/blog/". $fileName;
-            $fullPath = base_path('storage/app/public/blog/' . $fileName);
+            $fullPath1 = public_path('/assets/images/1.webp');
+            $fullPath = public_path('storage/blog/' . $fileName);
             if (File::exists($fullPath) && is_link($fullPath)) {
                 unlink($fullPath);
                 // Storage::disk('public')->delete('blog/' . $fileName);
@@ -284,7 +284,7 @@ class DropzoneController extends Controller
                 return response()->json(['success' => true, 'message' => 'File deleted very successfully']);
             }else{
                 // File does not exist or is not a symbolic link
-                return response()->json(['success' => false, 'message' => 'File failed to delete'. $fullPath]);
+                return response()->json(['success' => false, 'message' => 'File failed to delete'. $fullPath1]);
             }
             
         }
