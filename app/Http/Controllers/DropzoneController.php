@@ -276,7 +276,7 @@ class DropzoneController extends Controller
                 public function update($data) { return true; }
             };
             // $fullPath = "/storage/blog/". $fileName;
-            $fullPath = base_path('storage/blog/' . $fileName);
+            $fullPath = base_path('storage/app/public/blog/' . $fileName);
             if (File::exists($fullPath) && is_link($fullPath)) {
                 unlink($fullPath);
                 // Storage::disk('public')->delete('blog/' . $fileName);
