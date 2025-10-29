@@ -284,7 +284,7 @@ class DropzoneController extends Controller
                 return response()->json(['success' => true, 'message' => 'File deleted very successfully']);
             }else{
                 // File does not exist or is not a symbolic link
-                return response()->json(['success' => false, 'message' => 'File does not exist or is not a symbolic link']);
+                return response()->json(['success' => false, 'message' => 'File failed to delete'. $fullPath]);
             }
             
         }
