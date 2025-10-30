@@ -281,10 +281,11 @@ class DropzoneController extends Controller
                 // unlink($fullPath);
                 Storage::disk('blog')->delete($fileName);
                 // $deleted=Storage::disk('public')->delete('image');
-                return response()->json(['success' => true, 'message' => 'File deleted very successfully'. $fullPath]);
+                return response()->json(['success' => true, 'message' => 'File deleted very successfully']);
             }else{
                 // File does not exist or is not a symbolic link
-                return response()->json(['success' => false, 'message' => 'File failed to delete'. $fullPath]);
+                // return response()->json(['success' => false, 'message' => 'File failed to delete']);
+                echo $fullPath;
             }
             
         }
