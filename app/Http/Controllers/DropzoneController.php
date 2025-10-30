@@ -274,15 +274,15 @@ class DropzoneController extends Controller
                 public function update($data) { return true; }
             };
             $disk = \Illuminate\Support\Facades\Storage::disk('blog');
-            $exists = Storage::disk('blog')->exists($fileName);
+            // $exists = Storage::disk('blog')->exists($fileName);
             // $disk->delete($fileName);
             // $fullPath = public_path('storage/blog/' . $fileName);
-            if ($exists ) {
+            // if ($exists ) {
                 // unlink($fullPath);
                 $disk->delete($fileName);
                 // $deleted=Storage::disk('public')->delete('image');
                 return response()->json(['success' => true, 'message' => 'File deleted very successfully']);
-            }
+            // }
             
         }
 
@@ -320,11 +320,11 @@ class DropzoneController extends Controller
             // $image_path = "/storage/blog/". $fileName;
             // $fullPath = public_path('storage/service/' . $fileName);
             $disk = \Illuminate\Support\Facades\Storage::disk('service');
-            $exists = Storage::disk('service')->exists($fileName);
-            if ($exists) {
+            // $exists = Storage::disk('service')->exists($fileName);
+            // if ($exists) {
                 // unlink($fullPath);
                 $disk->delete($fileName);
-            }
+            // }
             return response()->json(['success' => true, 'message' => 'File deleted successfully']);
         }
 

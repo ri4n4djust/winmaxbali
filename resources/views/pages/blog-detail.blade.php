@@ -1,8 +1,19 @@
 @extends('layouts.default')
+@php
+    $raw = $blogDetail[0]->image ?? '';
+    $parts = array_values(array_filter(array_map('trim', explode(',', $raw))));
+    $first = $parts[0] ?? null;
+    $second = $parts[1] ?? null;
+@endphp
 @section('meta')
     <title>WinMax Bali - {{ $blogDetail[0]->slug }}</title>
     <meta content="{!! $blogDetail[0]->meta_description !!}" name="description">
     <meta content="{{ $blogDetail[0]->meta_keywords }}" name="keywords">
+    <meta property="og:title" content="WinMax Bali">
+    <meta property="og:description" content="{{ $blogDetail[0]->title ?? 'WinMax Bali : Solusi IT.' }}">
+    <meta property="og:image" content="{{ asset('storage/blog/'.$first) }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
 @endsection
 @section('content')
     
@@ -29,20 +40,10 @@
                 <div class="col-lg-8" >
                     
                     <div class="position-relative mt-4">
-                        
-                   
-                        @php
-                            $raw = $blogDetail[0]->image ?? '';
-                            $parts = array_values(array_filter(array_map('trim', explode(',', $raw))));
-                            $second = $parts[1] ?? null;
-                        @endphp
 
                         @if($second)
                             <img src="{{ asset('storage/blog/'.$second) }}" class="img-fluid" alt="{{ $blogDetail[0]->title ?? 'image' }}">
                         @endif
-                        
-                        
-                        
 
                         <div >
                             @php
