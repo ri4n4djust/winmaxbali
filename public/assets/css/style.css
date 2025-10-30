@@ -509,7 +509,7 @@ p [style*='max-width'] {
 }
 
 p a {
-	color: inherit;
+	color:#00aae6;
 }
 
 p .text-width-1 {
