@@ -9,8 +9,6 @@ use App\Models\Blog;
 use App\Models\Service;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\File;
 
 
 
@@ -275,18 +273,19 @@ class DropzoneController extends Controller
             $image = new class {
                 public function update($data) { return true; }
             };
-            $fullPath = Storage::disk('blog')->get($fileName);;
+            $disk = \Illuminate\Support\Facades\Storage::disk('blog');
+            $disk->delete($fileName);
             // $fullPath = public_path('storage/blog/' . $fileName);
-            if (File::exists($fullPath) ) {
+            // if (File::exists($fullPath) ) {
                 // unlink($fullPath);
-                Storage::disk('blog')->delete($fileName);
+                // $disk->delete($fileName);
                 // $deleted=Storage::disk('public')->delete('image');
                 return response()->json(['success' => true, 'message' => 'File deleted very successfully']);
-            }else{
+            // }else{
                 // File does not exist or is not a symbolic link
                 // return response()->json(['success' => false, 'message' => 'File failed to delete']);
-                echo $fullPath;
-            }
+                // echo $fullPath;
+            // }
             
         }
 
