@@ -319,8 +319,8 @@ class DropzoneController extends Controller
             };
             // $image_path = "/storage/blog/". $fileName;
             // $fullPath = public_path('storage/service/' . $fileName);
-            $disk = \Illuminate\Support\Facades\Storage::disk('blog');
-            $exists = Storage::disk('blog')->exists($fileName);
+            $disk = \Illuminate\Support\Facades\Storage::disk('service');
+            $exists = Storage::disk('service')->exists($fileName);
             if ($exists) {
                 // unlink($fullPath);
                 $disk->delete($fileName);
