@@ -9,6 +9,13 @@
     <meta property="og:image" content="{{ asset('assets/images/ogfoto.png') }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="website">
+    <!-- Google tag (gtag.js) event -->
+    <script>
+      gtag('event', 'ads_conversion_Book_appointment_1', {
+        // <event_parameters>
+      });
+    </script>
+
 @endsection
 
 @section('content')

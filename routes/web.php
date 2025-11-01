@@ -87,8 +87,9 @@ Route::get('/contact', [App\Http\Controllers\webController::class , 'contact'])-
 
 Route::get('/sitemap', function(){
     $sitemap = Sitemap::create()
-    ->add(Url::create('/gallery'))
-    ->add(Url::create('/provide-services'))
+    ->add(Url::create('/blog/all'))
+    ->add(Url::create('/service'))
+    ->add(Url::create('/projects'))
     ->add(Url::create('/about-us'));
     
    
@@ -99,5 +100,9 @@ Route::get('/sitemap', function(){
     }
     
     $sitemap->writeToFile(public_path('sitemap.xml'));
+    $sitemap = file_get_contents(public_path('sitemap.xml'));
+    // return response($sitemap, 200)->header('Content-Type', 'application/xml');
+    return view('pages.sitemap-preview', ['sitemap' => $sitemap]);
+
     
 }); 

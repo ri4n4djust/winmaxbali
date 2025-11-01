@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>http://localhost:8000/gallery</loc>
+        <loc>http://localhost:8000/blog/all</loc>
     
             </url>
     <url>
-        <loc>http://localhost:8000/provide-services</loc>
+        <loc>http://localhost:8000/service</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/projects</loc>
     
             </url>
     <url>
@@ -13,7 +17,11 @@
     
             </url>
     <url>
-        <loc>http://localhost:8000/blog-detail/blog-yg-bagus</loc>
+        <loc>http://localhost:8000/blog-detail/Tegenungan Waterfall is a beautiful and well-kept secret waterfall located in Ubud village,</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/blog-detail/The Ubud Monkey Forest in Bali is both a temple complex and an animal sanctuary.</loc>
     
             </url>
 </urlset>
