@@ -5,6 +5,7 @@
 @include('includes.head')
 @yield('meta')
 <meta name="csrf-token" content="{{ csrf_token() }}">
+<meta name="p:domain_verify" content="7578cb927a0053e2090f6a129b6d3a93"/>
 @yield('media')
 
 
