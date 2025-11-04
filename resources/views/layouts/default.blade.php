@@ -7,7 +7,16 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="p:domain_verify" content="7578cb927a0053e2090f6a129b6d3a93"/>
 @yield('media')
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1004826206">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-1004826206');
+</script>
 
 </head>
 
