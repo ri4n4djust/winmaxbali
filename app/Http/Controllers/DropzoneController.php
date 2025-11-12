@@ -115,7 +115,7 @@ class DropzoneController extends Controller
                     'id' => $idal,
                     'image' => $finalImage,
                     'title' => $request->title,
-                    'slug' => $request->slug,
+                    'slug' => Str::slug($request->slug),
                     'content' => $request->content,
                     'type' => $request->type,
                     'meta_title' => $request->title,
@@ -157,7 +157,7 @@ class DropzoneController extends Controller
                 [
                     'image' => $finalImage,
                     'title' => $request->title,
-                    'slug' => $request->slug,
+                    'slug' => Str::slug($request->slug),
                     'content' => $request->content,
                     'meta_title' => $request->title,
                     'meta_description' => $request->meta_description,
