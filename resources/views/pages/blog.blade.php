@@ -19,80 +19,94 @@
   <div class="container">
     <h3 class="section-title wow-outer"><span class="wow slideInDown">Latest Blog Post</span></h3>
     <div class="row row-30">
-      <form action="{{ route('blog', 'cari') }}" method="GET" class="search-form">
-        <div class="input-group">
-          <input type="text" name="query" placeholder="Cari sesuatu..." value="{{ request('query') }}" required>
-          <button type="submit">🔍 Cari</button>
-          <a href="{{ route('blog', 'all') }}" class="reset-btn">⟲ Reset</a>
+      <div class="col-12">
+        <style>
+          .search-card {
+            max-width: 920px;
+            margin: 0 auto 30px;
+            background: #fff;
+            padding: 14px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .search-form .search-inner {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+          }
+          .search-form input[type="text"] {
+            flex: 1;
+            padding: 12px 14px;
+            font-size: 15px;
+            border: 1px solid #e6e9ef;
+            border-radius: 10px;
+            outline: none;
+            transition: box-shadow .18s ease, border-color .18s ease;
+          }
+          .search-form input[type="text"]:focus {
+            border-color: #4f46e5;
+            box-shadow: 0 6px 18px rgba(79,70,229,0.12);
+          }
+          .search-form button[type="submit"] {
+            background: linear-gradient(90deg,#4f46e5,#06b6d4);
+            color: #fff;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 6px 18px rgba(79,70,229,0.12);
+            transition: transform .12s ease, opacity .12s ease;
+          }
+          .search-form button[type="submit"]:active { transform: translateY(1px); }
+          .search-form .reset-btn {
+            color: #374151;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            background: transparent;
+          }
+          .search-form .reset-btn:hover {
+            color: #111827;
+            text-decoration: underline;
+          }
+          @media (max-width: 576px) {
+            .search-card { padding: 10px; }
+            .search-form button[type="submit"] { padding: 10px 12px; }
+            .search-form .reset-btn { padding: 6px 8px; }
+          }
+          .sr-only {
+            position: absolute !important;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
+            overflow: hidden; clip: rect(0,0,0,0);
+            white-space: nowrap; border: 0;
+          }
+        </style>
+
+        <div class="search-card">
+          <form action="{{ route('blog', 'cari') }}" method="GET" class="search-form" role="search" aria-label="Cari blog">
+            <label class="sr-only" for="blog-search">Cari sesuatu</label>
+            <div class="search-inner">
+              <input id="blog-search" type="text" name="query" placeholder="Cari artikel, topik, atau kata kunci..." value="{{ request('query') }}" autocomplete="off" required />
+              <button type="submit" aria-label="Cari">🔍 Cari</button>
+              <a href="{{ route('blog', 'all') }}" class="reset-btn" aria-label="Reset pencarian">⟲ Reset</a>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
+      
 
-      <style>
-      .search-form {
-        width: 100%;
-        max-width: 600px;
-        margin: 30px auto;
-        padding: 15px;
-        background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      }
-
-      .input-group {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-      }
-
-      .input-group input[type="text"] {
-        flex: 1;
-        padding: 12px 16px;
-        border: 2px solid #ccc;
-        border-radius: 8px;
-        font-size: 16px;
-        min-width: 0;
-      }
-
-      .input-group button,
-      .input-group .reset-btn {
-        padding: 12px 16px;
-        font-size: 16px;
-        border-radius: 8px;
-        white-space: nowrap;
-        text-align: center;
-      }
-
-      .input-group button {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
-
-      .input-group .reset-btn {
-        background-color: #6c757d;
-        color: white;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-      }
-
-      .input-group .reset-btn:hover {
-        background-color: #5a6268;
-      }
-
-      /* Responsive behavior */
-      @media (max-width: 480px) {
-        .input-group {
-          flex-direction: column;
-        }
-
-        .input-group input,
-        .input-group button,
-        .input-group .reset-btn {
-          width: 100%;
-        }
-      }
-      </style>
       
     </div>
     <div class="row row-50">
