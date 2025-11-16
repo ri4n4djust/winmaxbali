@@ -9,6 +9,10 @@
     
             </url>
     <url>
+        <loc>http://localhost:8000/products/all</loc>
+    
+            </url>
+    <url>
         <loc>http://localhost:8000/projects</loc>
     
             </url>
@@ -22,6 +26,270 @@
             </url>
     <url>
         <loc>http://localhost:8000/blog-detail/The Ubud Monkey Forest in Bali is both a temple complex and an animal sanctuary.</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kamera-2mp-hikvision</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/dvr-hilook-8ch</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/bnc-drat-taiwan</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/konektor-dc</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/power-central-hik-4ch</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/ram-ddr4-4gb-kingston</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/ssd-nvme-adata-500gb</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/ssd-nvme-256gb-raptor</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kabel-jaringan-spektra-305m</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/poe-spliter</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/hdmi-extender-30m</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/ssd-nvme-256gb-venom-rx</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kabel-cctv-rg59-ecer</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/hardisk-cctv-skyhawk-1tb</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/hardisk-cctv-skyhawk-2tb</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/head-epson-tmu-220b</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/mainboard-epson-l360-2nd</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/roller-epson-l120</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/hardisk-laptop-seagate-1tb-2nd</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/laptop-axioo-hype7-ryzen-7-16gbddr4-512gb</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/coolpad-rexus-breeze-b140</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/speaker-advance-20-std</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/pompa-purge-epson-l3110</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/headset-gaming-rexus-vonix-f27-blue</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/ic-tr-a2222-c6144-tr-epson</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/ic-power-printer-epson-l1110-l3110-l3210-l3216-l3250-board-e09a7418a</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/ram-ddr3-8gb-qwerty</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/adaptor-monitor-lg-19v-2a</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/dvr-hilook-4ch</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/keyboard-asus-x441</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kamera-ezviz-h3c-2mp-ir-outdoor</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/sd-card-64gb-imou</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/power-central-hik-8ch</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/mainboard-epson-tmu-220</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/ssd-sata-mcquest-falcon-256gb</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/casing-hdd-25-unitek</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/balun-single-2mp</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kamera-analog-hilook-outdoor-2mp</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kabel-spektra-cat-6</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/balun-single-5mp</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/konektor-dc-female</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/dora-dus-10cm-black</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/power-central-dahua-8ch</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/konektor-rj45-comscope</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/power-supply-advance-500watt</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/hilook-outdoor-2mp-audio-cam</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/power-central-dahua-4ch</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kabel-cctv-rg59-interluc</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/box-panel-30x40</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/pipa-conduit-lesso</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/sok-pipa-conduit</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/klem-kabel-9-imundex</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/klem-pipa-20-masko</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kabel-jaringan-belden-cat-6</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kabel-ties-25cm-putih</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/dora-dus-58-black</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/pipa-flexible</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/nvr-ezviz-x5s-8w-8channel</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kamera-ezviz-h8c-2mp-outdoor-ptz</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/swith-hub-tplink-8port-10100</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kamera-tiandy-tc-c320n-indoor</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/switch-hub-poe-8-port-2uplink-jy-1010b</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/poe-spliter-48v-to-12v</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/kabel-lan-hikvision-cat-6</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/led-monitor-enlight-24-24esi-b-ips</loc>
+    
+            </url>
+    <url>
+        <loc>http://localhost:8000/product-detail/bracket-rodson-rb3f-flat-17-43inch</loc>
     
             </url>
 </urlset>

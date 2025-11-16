@@ -40,6 +40,8 @@
       @include('includes.headmenu')
     @elseif (Route::is('blog') || Route::is('blog.detail'))
       @include('includes.headmenudetail', ['banner' => '1.webp' ?? null, 'judul' => 'Blog' ?? null])
+    @elseif (Route::is('products') || Route::is('product.detail'))
+      @include('includes.headmenudetail', ['banner' => '1.webp' ?? null, 'judul' => 'Our Products' ?? null])
     @elseif (Route::is('about-us'))
       @include('includes.headmenudetail', ['banner' => '2.webp' ?? null, 'judul' => 'About Us' ?? null])
     @elseif (Route::is('service'))

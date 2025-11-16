@@ -16,10 +16,10 @@
                 <ul class="rd-navbar-nav">
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/">HOME</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/blog/all">BLOG</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/products/all">PRODUCTS</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/service">SERVICES</a></li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/projects">PROJECTS</a>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">ABOUT US</a></li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="/contact">CONTACT</a></li>
                 </ul>
                 </div>
             </div>

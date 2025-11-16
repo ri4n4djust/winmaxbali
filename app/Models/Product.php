@@ -4,20 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Blog extends Model
+class Product extends Model
 {
     //
-    protected $table = "blogs";
+    protected $table = "products";
     protected $fillable = [
-        'title',
+        'name',
         'slug',
-        'content',
+        'description',
         'meta_title',
         'meta_description',
         'meta_keywords',
         'image',
         'type',
         'id',
-        'views'
+        'category_id'
     ];
 }

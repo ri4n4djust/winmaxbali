@@ -49,6 +49,14 @@ class webController extends Controller
     public function blogDetail($slug){
         // $slug = $request->query('slug');
         // var_dump($kamar[0]->foto);
+        // Get the current view count
+        $currentViews = DB::table('blogs')->where('slug', $slug)->value('views');
+        // Increment the view count
+        DB::table('blogs')->where('slug', $slug)->update(['views' => ($currentViews + 1)]);
+        $popularPosts = DB::table('blogs')
+            ->orderBy('views', 'desc')
+            ->limit(5)
+            ->get();
 
         $categories = DB::table('blogtypes')->get();
         $albums = DB::table('albums')->get();
@@ -56,7 +64,68 @@ class webController extends Controller
         $blogDetail = DB::table('blogs')->where('slug', $slug)->get();
         return view('pages.blog-detail', compact('categories', 'albums', 'popularPosts', 'blogDetail'));
     }
-    
+        
+    public function products(Request $request, $slug){
+
+        // var_dump($kamar[0]->foto);
+        $promos = Promo::where('status', '1')->get();
+        $albums = DB::table('albums')->get();
+        $search = $request->query('q');
+        $category = $request->query('category');
+        if($search == ''){
+            $cr = 'all';
+        }
+
+        if ($search != null && $search != 'all') {
+            $products = DB::table('products')->where('name', 'like', '%' . $search . '%')->orderBy('id', 'desc')->paginate(12);
+        } elseif ($category != null) {
+            // if category is numeric assume it's an ID, otherwise treat as slug
+            if (is_numeric($category)) {
+                $products = DB::table('products')->where('category_id', $category)->orderBy('id', 'desc')->paginate(12);
+            } else {
+                $cat = DB::table('product_categories')->where('code_cat', $category)->first();
+                if ($cat) {
+                    $products = DB::table('products')->where('category_id', $cat->code_cat)->orderBy('id', 'desc')->paginate(12);
+                } else {
+                    // fallback to all products if category query is invalid
+                    $products = DB::table('products')->orderBy('id', 'desc')->paginate(12);
+                }
+            }
+        } elseif ($slug == 'all') {
+            $products = DB::table('products')->orderBy('id', 'desc')->paginate(12);
+        } elseif ($cr == 'all') {
+            $products = DB::table('products')->orderBy('id', 'desc')->paginate(12);
+        } else {
+            $categories = DB::table('product_categories')->where('code_cat', $category)->first();
+            if($categories){
+                $products = DB::table('products')->where('category_id', $categories->code_cat)->orderBy('id', 'desc')->paginate(12);
+            } else {
+                $products = [];
+            }
+        }
+
+        $categories = DB::table('product_categories')->get();
+        return view('pages.products', compact('promos', 'albums', 'products', 'categories'));
+    }
+          
+    public function productDetail($slug){
+        // $slug = $request->query('slug');
+        // var_dump($kamar[0]->foto);
+        // Get the current view count
+        // $currentViews = DB::table('blogs')->where('slug', $slug)->value('views');
+        // Increment the view count
+        // DB::table('products')->where('slug', $slug)->update(['views' => ($currentViews + 1)]);
+        $popularPosts = DB::table('blogs')
+            ->orderBy('views', 'desc')
+            ->limit(5)
+            ->get();
+
+        $categories = DB::table('product_categories')->get();
+        // $albums = DB::table('albums')->get();
+        // $popularPosts = DB::table('blogs')->get();
+        $productDetail = DB::table('products')->where('slug', $slug)->get();
+        return view('pages.product-detail', compact('categories', 'productDetail', 'popularPosts'));
+    }   
     
     public function gallery(){
 

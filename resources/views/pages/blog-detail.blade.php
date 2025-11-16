@@ -276,24 +276,29 @@
                         <div class="section-header">
                             <h4>Iklan</h4>
                         </div>
-                        
                     </div>
                     <div class="progress-linear-outer wow-outer">
                         <div class="sidebar-section">
                             <h4 class="text-lg font-semibold mb-4">🔥 Popular Posts</h4>
-                            <ul class="space-y-3">
-                                @foreach($popularPosts as $post)
-                                    <li>
-                                        <a href="{{ route('blog.detail', $post->slug) }}" class="text-blue-600 hover:underline">
-                                            {{ $post->title }}
-                                        </a>
-                                        <div class="text-sm text-gray-500">
-                                            {{ $post->type }} views
-                                        </div>
-                                    </li>
-                                @endforeach
-                            </ul>
+                            @if($popularPosts && count($popularPosts) > 0)
+                                <ul class="list-unstyled space-y-3">
+                                    @foreach($popularPosts as $post)
+                                        <li class="mb-3">
+                                            <a href="{{ route('blog.detail', $post->slug) }}" 
+                                               class="text-decoration-none">
+                                                <div class="small fw-bold text-primary">{{ $post->title }}</div>
+                                                <div class="text-muted small">
+                                                    <i class="bi bi-eye"></i> {{ number_format($post->views ?? 0) }} views
+                                                </div>
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            @else
+                                <p class="text-muted">No popular posts yet.</p>
+                            @endif
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

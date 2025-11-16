@@ -16,8 +16,8 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
-    // 'default' => 'local', 'mysql',
+    // 'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => 'local', 'mysql',
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -35,6 +35,18 @@ return [
             'driver'    => 'mysql',
             'host'      => '192.168.2.30',
             'database'  => 'duaraka',
+            'username'  => 'root',
+            'password'  => 'Admin@123#',
+            'charset'   => 'latin1',
+            'collation' => 'latin1_general_ci',
+            'prefix'    => '',
+            'strict' => false,
+        ],
+
+        'local_sumber' => [
+            'driver'    => 'mysql',
+            'host'      => '192.168.2.30',
+            'database'  => 'stokdb',
             'username'  => 'root',
             'password'  => 'Admin@123#',
             'charset'   => 'latin1',

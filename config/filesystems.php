@@ -37,6 +37,14 @@ return [
             'throw' => false,
             'report' => false,
         ],
+        'product' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/product'),
+            'url' => env('APP_URL').'/storage/product',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
+        ],
 
         'service' => [
             'driver' => 'local',

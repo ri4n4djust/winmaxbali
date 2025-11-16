@@ -96,6 +96,53 @@
     </div>
 </section>
 
+<section class="section section-md">
+    <div class="container">
+        <!-- Profile Modern-->
+        <article class="profile-modern">
+            <div class="profile-modern-main">
+                <div class="profile-modern-header">
+                    <div class="profile-modern-header-item">
+                        <h3>Kontak Kami</h3>
+                        <p>WinMax Bali</p>
+                    </div>
+                    <div class="profile-modern-item">
+                        <div class="group group-xs group-middle"><a class="icon icon-sm icon-creative mdi mdi-facebook" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-twitter" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-instagram" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-google" href="#"></a><a class="icon icon-sm icon-creative mdi mdi-linkedin" href="#"></a></div>
+                    </div>
+                    </div>
+                    <div class="row row-30">
+                        <div class="col-lg-6">
+                            <p>Kontak kami melalui tlp : +6281 8688114 </p>
+                            <p>Melalui WA : 
+                                <a href="https://wa.me/62818688114?text=Halo%20saya%20tertarik%20dengan%20layanan%20Anda" target="_blank" style="display:inline-flex;align-items:center;padding:10px 15px;background-color:#25D366;color:white;border-radius:5px;text-decoration:none;font-family:sans-serif;font-size:16px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:24px;height:24px;margin-right:10px;">
+  Chat via WhatsApp
+</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <from action="" method="post">
+                                <div class="form-group">
+                                    <label for="name">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Pesan</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Kirim</button>
+                            </from>
+                        </div>
+                                    
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
 
 
 

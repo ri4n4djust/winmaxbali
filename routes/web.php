@@ -6,10 +6,20 @@ use Spatie\Sitemap\Tags\Url;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DropzoneController;
 use App\Models\Blog;
+use App\Models\Product;
+use Illuminate\Support\Facades\Artisan;
+
   
 Route::get('/foo', function () {
     Artisan::call('storage:link');
 });
+Route::get('/sync', function () {
+    Artisan::call('sync:products', [
+        '--chunk' => 100
+    ]);
+    return 'Sinkronisasi produk selesai. ' . now();
+});
+
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
@@ -47,6 +57,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/admin-blog/update/{id}', [App\Http\Controllers\blogController::class, 'update'])->name('admin.blog.update');
     Route::delete('/admin-blog/delete/{id}', [App\Http\Controllers\blogController::class, 'destroy'])->name('admin.blog.delete');
 
+    Route::get('/admin-products/{slug}', [App\Http\Controllers\productController::class, 'index'])->name('admin.products');
+    Route::get('/admin-products/edit/{id}', [App\Http\Controllers\productController::class, 'edit'])->name('admin.products.edit');
+    Route::patch('/admin-products/update/{id}', [App\Http\Controllers\productController::class, 'update'])->name('admin.products.update');
+    Route::delete('/admin-products/delete/{id}', [App\Http\Controllers\productController::class, 'destroy'])->name('admin.products.delete');
+
     Route::get('/admin-service', [App\Http\Controllers\serviceController::class, 'index'])->name('admin.service');
     Route::get('/admin-service/edit/{id}', [App\Http\Controllers\serviceController::class, 'edit'])->name('admin.service.edit');
     Route::patch('/admin-service/update/{id}', [App\Http\Controllers\serviceController::class, 'update'])->name('admin.service.update');
@@ -56,10 +71,12 @@ Route::middleware('auth')->group(function () {
     Route::post('/dropzone/store-sl', [DropzoneController::class, 'storeSl'])->name('dropzone.storeSl');
     Route::post('/dropzone/store-bg', [DropzoneController::class, 'storeBg'])->name('dropzone.storeBg');
     Route::post('/dropzone/store-blog', [DropzoneController::class, 'storeBlog'])->name('dropzone.storeBlog');
+    Route::post('/dropzone/store-product', [DropzoneController::class, 'storeProduct'])->name('dropzone.storeProduct');
     Route::post('/dropzone/store-service', [DropzoneController::class, 'storeService'])->name('dropzone.storeService');
     Route::delete('/dropzone/delete', [DropzoneController::class, 'destroy'])->name('dropzone.delete');
     Route::delete('/dropzone/delete-bg', [DropzoneController::class, 'destroyBg'])->name('dropzone.deleteBg');
     Route::delete('/dropzone/delete-blog', [DropzoneController::class, 'destroyBlog'])->name('dropzone.deleteBlog');
+    Route::delete('/dropzone/delete-product', [DropzoneController::class, 'destroyProduct'])->name('dropzone.deleteProduct');
     Route::delete('/dropzone/delete-service', [DropzoneController::class, 'destroyService'])->name('dropzone.deleteService');
     Route::delete('/dropzone/delete-sl', [DropzoneController::class, 'destroySl'])->name('dropzone.deleteSl');
 
@@ -84,11 +101,17 @@ Route::get('/projects', [App\Http\Controllers\projectController::class , 'projec
 Route::get('/project-detail', [App\Http\Controllers\projectController::class , 'projectDetail'])->name('project-detail');
 Route::get('/about-us', [App\Http\Controllers\webController::class , 'aboutUs'])->name('about-us');
 Route::get('/contact', [App\Http\Controllers\webController::class , 'contact'])->name('contact');
-
+Route::get('/products/{slug}', [App\Http\Controllers\webController::class , 'products'])->name('products');
+Route::get('/product-detail/{slug}', [App\Http\Controllers\webController::class , 'productDetail'])->name('product.detail');
+Route::get('/sitemap-preview', function(){
+    $sitemap = file_get_contents(public_path('sitemap.xml'));
+    return view('pages.sitemap-preview', ['sitemap' => $sitemap]);
+});
 Route::get('/sitemap', function(){
     $sitemap = Sitemap::create()
     ->add(Url::create('/blog/all'))
     ->add(Url::create('/service'))
+    ->add(Url::create('/products/all'))
     ->add(Url::create('/projects'))
     ->add(Url::create('/about-us'));
     
@@ -98,11 +121,11 @@ Route::get('/sitemap', function(){
     foreach ($blogs as $blog) {
         $sitemap->add(Url::create("/blog-detail/{$blog->slug}"));
     }
+    $products = Product::all();
+    foreach ($products as $prd) {
+        $sitemap->add(Url::create("/product-detail/{$prd->slug}"));
+    }
     
     $sitemap->writeToFile(public_path('sitemap.xml'));
-    $sitemap = file_get_contents(public_path('sitemap.xml'));
-    // return response($sitemap, 200)->header('Content-Type', 'application/xml');
-    return view('pages.sitemap-preview', ['sitemap' => $sitemap]);
-
     
 }); 

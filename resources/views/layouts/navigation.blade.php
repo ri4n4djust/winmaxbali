@@ -22,6 +22,9 @@
                     <x-nav-link :href="route('admin.gallery')" :active="request()->routeIs('admin.gallery')">
                         Gallery
                     </x-nav-link>
+                    <x-nav-link :href="route('admin.products', 'all')" :active="request()->routeIs('admin.products', 'all')">
+                        Products
+                    </x-responsive-nav-link>
                     <x-nav-link :href="route('admin.blog')" :active="request()->routeIs('admin.blog')">
                         Blogs
                     </x-responsive-nav-link>

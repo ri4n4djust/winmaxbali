@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Gallery;
 use App\Models\Page;
 use App\Models\Blog;
+use App\Models\Product;
 use App\Models\Service;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
@@ -121,6 +122,49 @@ class DropzoneController extends Controller
                     'meta_title' => $request->title,
                     'meta_description' => $request->meta_description,
                     'meta_keywords' => $request->meta_keywords,
+                ]
+            );
+
+            // Return JSON response and stop further processing
+            return response()->json(['success' => true, 'file_name' => $fileName]);
+            
+        }
+
+        return response()->json(['success' => false, 'message' => 'File upload failed']);
+    }
+
+    public function storeProduct(Request $request){
+        $request->validate([
+            'file' => 'required|image|mimes:jpeg,png,jpg,gif,webp|max:10240',
+        ]);
+
+        if ($request->hasFile('file')) {
+            $old = Product::where('id', $request->idal)->first();
+            // if an existing blog row exists and its image is not '-', append the new filename to it,
+            // otherwise set image to the new filename. Perform store + DB update here and return.
+            $fileName1 = $request->file->getClientOriginalName();
+            $idal = $request->idal;
+            $fileName = $idal . '_' . $fileName1;
+
+            // Store the uploaded file
+            $request->file->storeAs('/product/', $fileName, 'public');
+
+            // Prepare final image value
+            $finalImage = ($old && !empty($old->image) && $old->image !== '-') ? $old->image . ',' . $fileName : $fileName;
+
+            // Update/create the blog record with the combined image value
+            Product::updateOrCreate(
+                ['id' => $idal],
+                [
+                    // 'id' => $idal,
+                    'image' => $finalImage,
+                    'title' => $request->title,
+                    'slug' => Str::slug($request->slug),
+                    'description' => $request->content,
+                    'category_id' => $request->type,
+                    // 'meta_title' => $request->title,
+                    // 'meta_description' => $request->meta_description,
+                    // 'meta_keywords' => $request->meta_keywords,
                 ]
             );
 
@@ -274,6 +318,50 @@ class DropzoneController extends Controller
                 public function update($data) { return true; }
             };
             $disk = \Illuminate\Support\Facades\Storage::disk('blog');
+            // $exists = Storage::disk('blog')->exists($fileName);
+            // $disk->delete($fileName);
+            // $fullPath = public_path('storage/blog/' . $fileName);
+            // if ($exists ) {
+                // unlink($fullPath);
+                $disk->delete($fileName);
+                // $deleted=Storage::disk('public')->delete('image');
+                return response()->json(['success' => true, 'message' => 'File deleted very successfully']);
+            // }
+            
+        }
+
+        return response()->json(['success' => false, 'message' => 'File not found']);
+    }
+
+    public function destroyProduct(Request $request){
+
+        $fileName = $request->file_name;
+
+        $image = Product::where('image', $fileName)->first();
+
+        if ($fileName) {
+            // $image->delete();
+            // $image_path = $image->image;
+            // find a blog row that contains the filename (handles comma-separated lists)
+            // fall back to the exact-match that was queried earlier if present
+            $real = Product::where('image', 'like', '%' . $fileName . '%')->first() ?? $image;
+
+            if ($real) {
+                $parts = array_filter(array_map('trim', explode(',', (string)$real->image)));
+                // remove all occurrences of the filename
+                $remaining = array_values(array_filter($parts, function ($p) use ($fileName) {
+                    return $p !== $fileName;
+                }));
+
+                $newImageValue = count($remaining) ? implode(',', $remaining) : '-';
+                $real->update(['image' => $newImageValue]);
+            }
+
+            // replace $image with a no-op updater to avoid the following unconditional update call
+            $image = new class {
+                public function update($data) { return true; }
+            };
+            $disk = \Illuminate\Support\Facades\Storage::disk('product');
             // $exists = Storage::disk('blog')->exists($fileName);
             // $disk->delete($fileName);
             // $fullPath = public_path('storage/blog/' . $fileName);
