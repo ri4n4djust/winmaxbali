@@ -60,7 +60,7 @@ class webController extends Controller
 
         $categories = DB::table('blogtypes')->get();
         $albums = DB::table('albums')->get();
-        $popularPosts = DB::table('blogs')->get();
+        $popularPosts = DB::table('blogs')->where('views', '>', 5)->limit(6)->get();
         $blogDetail = DB::table('blogs')->where('slug', $slug)->get();
         return view('pages.blog-detail', compact('categories', 'albums', 'popularPosts', 'blogDetail'));
     }
